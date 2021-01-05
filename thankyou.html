@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ecommerce Home Page</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- theme css -->
+    <link rel="stylesheet" href="assets/css/borhan.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+
+    <!-- responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">    
+    
+    <!-- Font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+<!-- Mobile Menu section -->
+<section class="mobile-header-menu-section">
+    <!-- Left Barger menu icon -->
+    <div class="bargerMenu">
+        <i class="fa fa-bars"></i>
+    </div>
+
+    <!-- Middle logo -->
+    <div class="mobile-header-logo">
+        <img src="assets/images/bdbaba.png" class="img-fluid" alt="">
+    </div>
+
+    <!-- Right Menus -->
+    <div class="right-mobile-menu">
+        <i class="fa fa-shopping-basket"></i>  &nbsp;<span class="badge badge-light">0</span>
+    </div>
+</section>
+<!-- Mobile Menu section -->
+
+<!-- Left fixed sidebar -->
+<section>
+    <div class="main-left-fixed-sidebar" id="LeftSidebar">
+        <div class="sidebar-logo-close-icon">
+            <div class="sidebar-logo-header">
+                <img src="assets/images/bdbaba.png" alt="">
+            </div>
+            <div class="cross-icon">
+                <i class="fa fa-times" onclick="SidebarToggle()"></i>
+            </div>
+        </div>
+
+        <!-- Middle section -->
+
+        <!-- Profile picture and content area -->
+        <div class="sidebar-profile-box">
+            <div class="profile-pic">
+                <a href="profile.html"><img src="assets/images/others/happy-girl.jpg" alt=""></a>
+            </div>
+            <div class="sidebar-profile-content">
+                <h2>Md Borhan Uddin</h2>
+                <p>01851590081</p>
+                <p><a href="profile.html">Manage Accounts</a></p>
+            </div>
+        </div>
+
+        <!-- Menus -->
+        <div class="sidebar-middle-menus">
+            <ul>
+                <li><a href="#">Orders <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                <li><a href="#">GiftCard <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Campains <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Follwing Shops <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Shop <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">BDBabaShopping Express <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Newsfeed <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Career <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">LogOut <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+            </ul>
+        </div>
+
+        <div class="left-sidebar-footer">
+            <a href="#">About us</a> | <a href="#">Contact us</a> | <a href="#">Terms and conditions</a> |<a href="#">About us</a> | <a href="#">Contact us</a> | <a href="#">Terms and conditions</a>
+        </div>
+
+    </div>
+</section>
+<!-- Left fixed sidebar -->
+
+<header class="header-area">
+
+    <!-- Header middle -->
+    <div class="header-middle">
+        <div class="container-fluid">
+             <div class="row align-items-center">
+                <div class="col-md-2">
+                   <div class="logo-area">
+                       <a href="index.html"><img src="assets/images/bdbabablack.png" alt=""></a>
+                   </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="search-form">
+                        <form action="#" method="POST">
+                           <select name="" id="search-category">
+                               <option value="Products">Products</option>
+                               <option value="Products">Products</option>
+                               <option value="Suppliers">Suppliers</option>
+                           </select>
+                           <input type="text" placeholder="What Are You Looking For..." name="search">
+                           <a href="" class="search-btn"><i class="fa fa-search"></i> Search</a>
+                        </form>
+                    </div>
+                </div>
+                <!-- Card -->
+            <div class="col-md-3 text-right d-flex align-items-center justify-content-end">
+                <div class="login-ragistration">
+                    <a href="registation.html"><i class="fa fa-user w-auto d-inline bg-success text-white p-2 rounded mr-1"></i></a>
+                    <a href="login.html"><i class="fa fa-sign-in w-auto d-inline bg-info text-white p-2 rounded mr-1" aria-hidden="true"></i></a>
+                </div>
+                <div class="middle-cart">
+                    <button type="button" class="btn btn-success BrandColorbutton">
+                        <a href="cart.html"><i class="fa fa-shopping-basket"></i> Cart &nbsp;<span class="badge TopCart badge-light">0</span></a>
+                      </button>
+                      <span><a href="profile.html"><img src="assets/images/others/happy-girl.jpg" class="rounded-circle w-25" alt=""></a></span>
+                </div>
+            </div>
+             </div>
+        </div>
+    </div>
+
+
+    <!--header bottom-->
+    <div class="header-bottom">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg headerNavbar">
+            
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa fa-bars"></i>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#"> <i onclick="SidebarToggle()" class="fa fa-bars HomepageBar"></i> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Ready to Ship</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle service-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                      </a>
+                      <div class="dropdowTOP CATEGORIES
+                      n-menu" aria-labelledby="navbarDropdown">
+                        <div class="service-dropdown-menu">
+                            <div class="row mr-0 ml-0">
+                                <div class="col-md-6 pl-0 pr-0">
+                                  <div class="left-side">
+                                      <ul>
+                                          <li><a href=""><i class="fas fa-dollar-sign"></i> Trade Assurance</a></li>
+                                          <li><a href=""><i class="fas fa-dollar-sign"></i> Pay Later</a></li>
+                                          <li><a href=""><i class="fas fa-dollar-sign"></i> Payment Terms: Net-60</a></li>
+                                          <li><a href=""><i class="fas fa-dollar-sign"></i> Production Monitoring & Inspection Services</a></li>
+                                          <li><a href=""><i class="fas fa-dollar-sign"></i> Logistic Service</a></li>
+                                      </ul>
+                                  </div>
+                               </div>
+                               <div class="col-md-6 pl-0 pr-0">
+                                  <div class="right-side">
+                                      <p>Sourcing Solutions</p>
+                                      <ul>
+                                          <li><a href="">Submit RFQ</a></li>
+                                          <li><a href="">Suppliers by Regions</a></li>
+                                      </ul>
+                                  </div>
+                               </div>
+                              </div>
+                        </div>
+                      </div>
+                    </li> -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Disabled</a>
+                    </li>
+                  </ul>
+                  <ul class="ml-auto">
+                    <li><a href="">Get the App |</a></li>
+                    <li><a href="">English- USD</a></li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+<!-- Main Thank You Page -->
+<section>
+    <div class="main-thankyou-page">
+        <h1>Thanks your <br> for your purchasing</h1>
+        <a href="index.html"><button>Continue Shopping</button></a>
+    </div>
+</section>
+<!-- Main Thank You Page -->
+
+
+
+
+<!-- footer area-->
+<footer class="footer-area">
+    <!-- footer top start-->
+    <div class="footer-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 Mhr">
+                    <a href="" class="logo-footer">
+                        <img src="assets/images/bdbaba.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-9">
+                    <div class="widget widget-newsletter form-wrapper d-flex justify-content-center align-items-center form-wrapper-inline">
+                        <div class="newsletter-info ">
+                        <h4 class="widget-title">Subscribe to our Newsletter</h4>
+                        <p>Get all the latest information on Events, Sales and Offers.</p>
+                        </div>
+                        <form action="" class="input-wrapper input-wrapper-inline d-flex">
+                        <input type="email" class="form-control" name="newsletter_email" id="newsletter_email" placeholder="Email address here..." required="">
+                        <button class="btn btn-grey btn-md ml-2" type="submit">subscribe<i class="fa fa-arrow-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of footer top-->
+
+
+    <!-- start of footer middle-->
+    <div class="footer-middle">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget">
+                        <h4 class="widget-title">Location</h4>
+                        <ul class="widget-body">
+                            <li>                                         
+                                <label>Phone:</label>
+                                <a href="#">Toll Free (123) 456-7890</a>
+                            </li>
+                            <li>
+                                <label>Email:</label>
+                                <a href="#">mail@gmail.com</a>
+                            </li>
+                            <li>
+                                <label>Address:</label>
+                                <a href="#">Hatirpul</a>
+                            </li>
+                            <li>
+                                <label>WORKING DAYS/HOURS:</label>
+                            </li>
+                            <li>
+                                <a href="#">Mon - Sun / 9:00 AM - 8:00 PM</a>
+                            </li>
+                        </ul>                                
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget ml-lg-4">
+                        <h4 class="widget-title">My Account</h4>
+                        <ul class="widget-body">
+                            <li>                                         
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Order History</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns</a>
+                            </li>
+                            <li>
+                                <a href="#">Custom Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Condition</a>
+                            </li>
+                        </ul>                                
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget ml-lg-4">
+                        <h4 class="widget-title">Quick Links</h4>
+                        <ul class="widget-body">
+                            <li>                                         
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Order History</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns</a>
+                            </li>
+                            <li>
+                                <a href="#">Custom Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Condition</a>
+                            </li>
+                        </ul>                                
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget widget-instagram">
+                        <h4 class="widget-title">About NavieaSoft</h4>
+                        <ul class="widget-body">
+                            <li>                                         
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Order History</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns</a>
+                            </li>
+                            <li>
+                                <a href="#">Custom Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Condition</a>
+                            </li>
+                        </ul>                                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="bordr-bottom"></div>
+            <div class="footer-content d-flex">
+                <div class="footer-left">
+                    <p>
+                        Navieasoft eCommerce © 2020. All Rights Reserved                            
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <ul>
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer area -->
+
+
+
+    <!-- jquery js -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- bootstrap popper js -->
+    <script src="assets/js/popper.js"></script>
+    <!-- theme bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- swiper js -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- main js-->
+    <script src="assets/js/borhan.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ecommerce Home Page</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- theme css -->
+    <link rel="stylesheet" href="assets/css/borhan.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+
+    <!-- responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">    
+    
+    <!-- Font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+<!-- Mobile Menu section -->
+<section class="mobile-header-menu-section">
+    <!-- Left Barger menu icon -->
+    <div class="bargerMenu">
+        <i class="fa fa-bars"></i>
+    </div>
+
+    <!-- Middle logo -->
+    <div class="mobile-header-logo">
+        <img src="assets/images/bdbaba.png" class="img-fluid" alt="">
+    </div>
+
+    <!-- Right Menus -->
+    <div class="right-mobile-menu">
+        <i class="fa fa-shopping-basket"></i>  &nbsp;<span class="badge badge-light">0</span>
+    </div>
+</section>
+<!-- Mobile Menu section -->
+
+<!-- Left fixed sidebar -->
+<section>
+    <div class="main-left-fixed-sidebar" id="LeftSidebar">
+        <div class="sidebar-logo-close-icon">
+            <div class="sidebar-logo-header">
+                <img src="assets/images/bdbaba.png" alt="">
+            </div>
+            <div class="cross-icon">
+                <i class="fa fa-times" onclick="SidebarToggle()"></i>
+            </div>
+        </div>
+
+        <!-- Middle section -->
+
+        <!-- Profile picture and content area -->
+        <div class="sidebar-profile-box">
+            <div class="profile-pic">
+                <a href="profile.html"><img src="assets/images/others/happy-girl.jpg" alt=""></a>
+            </div>
+            <div class="sidebar-profile-content">
+                <h2>Md Borhan Uddin</h2>
+                <p>01851590081</p>
+                <p><a href="profile.html">Manage Accounts</a></p>
+            </div>
+        </div>
+
+        <!-- Menus -->
+        <div class="sidebar-middle-menus">
+            <ul>
+                <li><a href="#">Orders <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                <li><a href="#">GiftCard <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Campains <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Follwing Shops <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Shop <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">BDBabaShopping Express <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Newsfeed <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Career <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">LogOut <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+            </ul>
+        </div>
+
+        <div class="left-sidebar-footer">
+            <a href="#">About us</a> | <a href="#">Contact us</a> | <a href="#">Terms and conditions</a> |<a href="#">About us</a> | <a href="#">Contact us</a> | <a href="#">Terms and conditions</a>
+        </div>
+
+    </div>
+</section>
+<!-- Left fixed sidebar -->
+
+<header class="header-area">
+
+    <!-- Header middle -->
+    <div class="header-middle">
+        <div class="container-fluid">
+             <div class="row align-items-center">
+                <div class="col-md-2">
+                   <div class="logo-area">
+                       <a href="index.html"><img src="assets/images/bdbabablack.png" alt=""></a>
+                   </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="search-form">
+                        <form action="#" method="POST">
+                           <select name="" id="search-category">
+                               <option value="Products">Products</option>
+                               <option value="Products">Products</option>
+                               <option value="Suppliers">Suppliers</option>
+                           </select>
+                           <input type="text" placeholder="What Are You Looking For..." name="search">
+                           <a href="" class="search-btn"><i class="fa fa-search"></i> Search</a>
+                        </form>
+                    </div>
+                </div>
+                <!-- Card -->
+            <div class="col-md-3 text-right d-flex align-items-center justify-content-end">
+                <div class="login-ragistration">
+                    <a href="registation.html"><i class="fa fa-user w-auto d-inline bg-success text-white p-2 rounded mr-1"></i></a>
+                    <a href="login.html"><i class="fa fa-sign-in w-auto d-inline bg-info text-white p-2 rounded mr-1" aria-hidden="true"></i></a>
+                </div>
+                <div class="middle-cart">
+                    <button type="button" class="btn btn-success BrandColorbutton">
+                        <a href="cart.html"><i class="fa fa-shopping-basket"></i> Cart &nbsp;<span class="badge TopCart badge-light">0</span></a>
+                      </button>
+                      <span><a href="profile.html"><img src="assets/images/others/happy-girl.jpg" class="rounded-circle w-25" alt=""></a></span>
+                </div>
+            </div>
+             </div>
+        </div>
+    </div>
+
+
+    <!--header bottom-->
+    <div class="header-bottom">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg headerNavbar">
+            
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa fa-bars"></i>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#"> <i onclick="SidebarToggle()" class="fa fa-bars HomepageBar"></i> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Ready to Ship</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle service-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                      </a>
+                      <div class="dropdowTOP CATEGORIES
+                      n-menu" aria-labelledby="navbarDropdown">
+                        <div class="service-dropdown-menu">
+                            <div class="row mr-0 ml-0">
+                                <div class="col-md-6 pl-0 pr-0">
+                                  <div class="left-side">
+                                      <ul>
+                                          <li><a href=""><i class="fas fa-dollar-sign"></i> Trade Assurance</a></li>
+                                          <li><a href=""><i class="fas fa-dollar-sign"></i> Pay Later</a></li>
+                                          <li><a href=""><i class="fas fa-dollar-sign"></i> Payment Terms: Net-60</a></li>
+                                          <li><a href=""><i class="fas fa-dollar-sign"></i> Production Monitoring & Inspection Services</a></li>
+                                          <li><a href=""><i class="fas fa-dollar-sign"></i> Logistic Service</a></li>
+                                      </ul>
+                                  </div>
+                               </div>
+                               <div class="col-md-6 pl-0 pr-0">
+                                  <div class="right-side">
+                                      <p>Sourcing Solutions</p>
+                                      <ul>
+                                          <li><a href="">Submit RFQ</a></li>
+                                          <li><a href="">Suppliers by Regions</a></li>
+                                      </ul>
+                                  </div>
+                               </div>
+                              </div>
+                        </div>
+                      </div>
+                    </li> -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Disabled</a>
+                    </li>
+                  </ul>
+                  <ul class="ml-auto">
+                    <li><a href="">Get the App |</a></li>
+                    <li><a href="">English- USD</a></li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </div>
+</header>
+
+
+<!-- Start main Hero section -->
+<section class="main-hero-section my-3">
+    <div class="container-fluid">
+        <div class="row no-gutters">
+
+            <!-- Hero left sidebar menus -->
+            <div class="col-md-3">
+                <div class="hero-left-sidebar-menu">
+                    <ul>
+                        <li><a href="#">Electronics <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                        <li><a href="#">Home Apperal <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                        <li><a href="#">Vehicle Accessories <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                        <li><a href="#">Sports Entertainment <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                        <li><a href="#">Machinery <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                        <li><a href="#">Home and Garden <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                        <li><a href="#">Beauty & Personal Care <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                        <li><a href="#">Home Apperal <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                        <li><a href="#">Vehicle Accessories <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                        <li><a href="#">Sports Entertainment <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                        <li><a href="#">Sports Entertainment <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                        <li><a href="#">Machinery <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                        <li><a href="#">Home and Garden <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                        <li><a href="#">Sports Entertainment <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                        <li><a href="#">Sports Entertainment <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                        <li><a href="#">Machinery <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Hero right slider section -->
+            <div class="col-md-9">
+
+                <!-- Slider -->
+                <div class="hero-right-slider">
+                    <div class="swiper-container hero-right-slider">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="hero-right-slider-items">
+                                    <img src="assets/images/banner/banner-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="hero-right-slider-items">
+                                    <img src="assets/images/banner/banner-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="hero-right-slider-items">
+                                    <img src="assets/images/banner/banner-4.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <!-- Mini slider -->
+                <div class="main-mini-slider mt-1">
+                    <div class="mini-slider-column">
+                        <div class="hero-right-mini-slider">
+                            <img src="assets/images/banner/banner-5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="mini-slider-column">
+                        <div class="hero-right-mini-slider">
+                            <img src="assets/images/banner/banner-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Start main Hero section -->
+
+<!-- BDBabaShopping Express -->
+<section class="bdbabaexpress-section p-2">
+    <div class="container-fluid mt-4">
+        <div class="front-page-title">
+            <div class="front-title">
+                <h3>BDBabaShopping Express</h3>
+            </div>
+            <div class="carusal-icons">
+                <a href="#"><p>See all ></p></a>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-md-12">
+                <div class="main-express">
+
+                    <!-- Start Express items -->
+                    <div class="express-main-box expressBox">
+                        <img src="assets/images/brands/11.png" alt="">
+                    </div>
+                    <div class="express-main-box expressBox">
+                        <img src="assets/images/brands/22.png" alt="">
+                    </div>
+                    <div class="express-main-box expressBox">
+                        <img src="assets/images/brands/33.png" alt="">
+                    </div>
+                    <div class="express-main-box expressBox">
+                        <img src="assets/images/brands/444.jpg" alt="">
+                    </div>
+                    <div class="express-main-box expressBox">
+                        <img src="assets/images/brands/555.png" alt="">
+                    </div>
+                    <div class="express-main-box expressBox">
+                        <img src="assets/images/brands/666.png" alt="">
+                    </div>
+                    <div class="express-main-box expressBox">
+                        <img src="assets/images/brands/777.png" alt="">
+                    </div>
+                    <div class="express-main-box expressBox">
+                        <img src="assets/images/brands/22.png" alt="">
+                    </div>
+    
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- BDBabaShopping Express -->
+
+<!-- Category -->
+<section>
+    <div class="container-fluid">
+        <!-- title -->
+        <div class="front-page-title pt-3" style="margin-bottom: -5px;">
+            <div class="front-title">
+                <h3>Find Your Best Category</h3>
+            </div>
+            <div class="carusal-icons">
+                <a href="#"><p>See all ></p></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-category">
+                      <!-- Swiper -->
+                    <div class="swiper-container category-slider">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="category-products-item">
+                                    <img src="assets/images/brands/11.jpg" alt="">
+                                    <a href="#"><p>Home</p></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category-products-item">
+                                    <img src="assets/images/brands/22.jpg" alt="">
+                                    <a href="#"><p>Accessories</p></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category-products-item">
+                                    <img src="assets/images/brands/33.jpg" alt="">
+                                    <a href="#"><p>Lawen and Garden</p></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category-products-item">
+                                    <img src="assets/images/brands/44.jpg" alt="">
+                                    <a href="#"><p>Machinery</p></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category-products-item">
+                                    <img src="assets/images/brands/55.jpg" alt="">
+                                    <a href="#"><p>Electronics</p></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category-products-item">
+                                    <img src="assets/images/brands/66.jpg" alt="">
+                                    <a href="#"><p>Mobile & Laptops</p></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category-products-item">
+                                    <img src="assets/images/brands/44.jpg" alt="">
+                                    <a href="#"><p>Machinery</p></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category-products-item">
+                                    <img src="assets/images/brands/55.jpg" alt="">
+                                    <a href="#"><p>Electronics</p></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Category -->
+
+
+<!-- BDBabaShopping Mall -->
+<section>
+    <div class="container-fluid my-5">
+        <!-- title -->
+        <div class="front-page-title pt-3">
+            <div class="front-title">
+                <h3>BDBabaShopping Mall</h3>
+            </div>
+            <div class="carusal-icons">
+                <a href="#"><p>See all ></p></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-bdbaba-mall">
+
+                    <!-- bdbaba mall items box -->
+                    <div class="bdbabamall-box">
+                        <img src="assets/images/products/bike1.jpg" alt="">
+                        <div class="bdbabaCompany">
+                            <img src="assets/images/brands/a.png" alt="">
+                        </div>
+                        <div class="bdbabamall-content">
+                            <h2>M.M Foods ltd</h2>
+                            <p>Drinking water company</p>
+                        </div>
+                    </div>
+                    <div class="bdbabamall-box">
+                        <img src="assets/images/products/m3.jpg" alt="">
+                        <div class="bdbabaCompany">
+                            <img src="assets/images/brands/b.png" alt="">
+                        </div>
+                        <div class="bdbabamall-content">
+                            <h2>M.M Foods ltd</h2>
+                            <p>Drinking water company</p>
+                        </div>
+                    </div>
+                    <div class="bdbabamall-box">
+                        <img src="assets/images/products/s1.jpg" alt="">
+                        <div class="bdbabaCompany">
+                            <img src="assets/images/brands/c.png" alt="">
+                        </div>
+                        <div class="bdbabamall-content">
+                            <h2>M.M Foods ltd</h2>
+                            <p>Drinking water company</p>
+                        </div>
+                    </div>
+                    <div class="bdbabamall-box">
+                        <img src="assets/images/products/ms1.jpeg" alt="">
+                        <div class="bdbabaCompany">
+                            <img src="assets/images/brands/d.png" alt="">
+                        </div>
+                        <div class="bdbabamall-content">
+                            <h2>M.M Foods ltd</h2>
+                            <p>Drinking water company</p>
+                        </div>
+                    </div>
+                    <div class="bdbabamall-box">
+                        <img src="assets/images/products/r4.jpg" alt="">
+                        <div class="bdbabaCompany">
+                            <img src="assets/images/brands/e.png" alt="">
+                        </div>
+                        <div class="bdbabamall-content">
+                            <h2>M.M Foods ltd</h2>
+                            <p>Drinking water company</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- BDBabaShopping Mall -->
+
+
+
+
+<!-- Brands For You -->
+<section class="bdbabaexpress-section p-2">
+    <div class="container-fluid my-4">
+
+        <!-- title -->
+        <div class="front-page-title">
+            <div class="front-title">
+                <h3>Brands For You</h3>
+            </div>
+            <div class="carusal-icons">
+                <a href="#"><p>See all ></p></a>
+            </div>
+        </div>
+
+        <div class="row">
+            
+            <div class="col-md-12">
+                <div class="main-express">
+
+                    <!-- Start Express items -->
+                    <div class="express-main-box">
+                        <img src="assets/images/brands/a.png" alt="">
+                    </div>
+                    <div class="express-main-box">
+                        <img src="assets/images/brands/b.png" alt="">
+                    </div>
+                    <div class="express-main-box">
+                        <img src="assets/images/brands/c.png" alt="">
+                    </div>
+                    <div class="express-main-box">
+                        <img src="assets/images/brands/d.png" alt="">
+                    </div>
+                    <div class="express-main-box">
+                        <img src="assets/images/brands/e.png" alt="">
+                    </div>
+                    <div class="express-main-box">
+                        <img src="assets/images/brands/f.png" alt="">
+                    </div>
+                    <div class="express-main-box">
+                        <img src="assets/images/brands/g.png" alt="">
+                    </div>
+                    <div class="express-main-box">
+                        <img src="assets/images/brands/h.png" alt="">
+                    </div>
+    
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Brands For You -->
+
+<!-- Weekly Best selling products -->
+<section class="best-selling-products-section py-4">
+    <div class="container-fluid">
+        <!-- title -->
+        <div class="front-page-title pt-3" style="margin-bottom: -5px;">
+            <div class="front-title">
+                <h3>Weekly Best Selling Products</h3>
+            </div>
+            <div class="carusal-icons">
+                <a href="#"><p>See all ></p></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-best-selling-products">
+
+                    <!-- Start single products -->
+                    <div class="best-selling-product-box">
+                        <div class="cat-right-product-box">
+                            <img src="assets/images/products/r1.jpg" alt="">
+                            <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+                            
+                            <!-- Rating div -->
+                            <div class="cat-card-rating">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                                    <li>(3 Rating)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Price and Add to cart -->
+                            <div class="price-and-addto-cart">
+                                <p class="cat-product-price">$22,000</p>
+                                <p class="AddtoCart">Add to cart</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best-selling-product-box">
+                        <div class="cat-right-product-box">
+                            <img src="assets/images/products/r2.jpg" alt="">
+                            <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+                            
+                            <!-- Rating div -->
+                            <div class="cat-card-rating">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                                    <li>(3 Rating)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Price and Add to cart -->
+                            <div class="price-and-addto-cart">
+                                <p class="cat-product-price">$22,000</p>
+                                <p class="AddtoCart">Add to cart</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best-selling-product-box">
+                        <div class="cat-right-product-box">
+                            <img src="assets/images/products/r3.jpg" alt="">
+                            <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+                            
+                            <!-- Rating div -->
+                            <div class="cat-card-rating">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                                    <li>(3 Rating)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Price and Add to cart -->
+                            <div class="price-and-addto-cart">
+                                <p class="cat-product-price">$22,000</p>
+                                <p class="AddtoCart">Add to cart</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best-selling-product-box">
+                        <div class="cat-right-product-box">
+                            <img src="assets/images/products/r4.jpg" alt="">
+                            <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+                            
+                            <!-- Rating div -->
+                            <div class="cat-card-rating">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                                    <li>(3 Rating)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Price and Add to cart -->
+                            <div class="price-and-addto-cart">
+                                <p class="cat-product-price">$22,000</p>
+                                <p class="AddtoCart">Add to cart</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best-selling-product-box">
+                        <div class="cat-right-product-box">
+                            <img src="assets/images/products/r5.jpg" alt="">
+                            <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+                            
+                            <!-- Rating div -->
+                            <div class="cat-card-rating">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                                    <li>(3 Rating)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Price and Add to cart -->
+                            <div class="price-and-addto-cart">
+                                <p class="cat-product-price">$22,000</p>
+                                <p class="AddtoCart">Add to cart</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Weekly Best selling products -->
+
+
+<!-- Baby products -->
+<section class="best-selling-products-section mb-5">
+    <div class="container-fluid">
+        <!-- title -->
+        <div class="front-page-title">
+            <div class="front-title">
+                <h3><i class="fa fa-child" aria-hidden="true"></i> Best Baby Products</h3>
+            </div>
+            <div class="carusal-icons">
+                <a href="#"><p>See all</p><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-best-selling-products">
+
+                    <!-- Start single products -->
+                    <div class="best-selling-product-box">
+                        <div class="cat-right-product-box">
+                            <img src="assets/images/products/baby1.jpg" alt="">
+                            <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+                            
+                            <!-- Rating div -->
+                            <div class="cat-card-rating">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                                    <li>(3 Rating)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Price and Add to cart -->
+                            <div class="price-and-addto-cart">
+                                <p class="cat-product-price">$22,000</p>
+                                <p class="AddtoCart">Add to cart</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best-selling-product-box">
+                        <div class="cat-right-product-box">
+                            <img src="assets/images/products/baby2.jpg" alt="">
+                            <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+                            
+                            <!-- Rating div -->
+                            <div class="cat-card-rating">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                                    <li>(3 Rating)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Price and Add to cart -->
+                            <div class="price-and-addto-cart">
+                                <p class="cat-product-price">$22,000</p>
+                                <p class="AddtoCart">Add to cart</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best-selling-product-box">
+                        <div class="cat-right-product-box">
+                            <img src="assets/images/products/baby3.jpg" alt="">
+                            <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+                            
+                            <!-- Rating div -->
+                            <div class="cat-card-rating">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                                    <li>(3 Rating)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Price and Add to cart -->
+                            <div class="price-and-addto-cart">
+                                <p class="cat-product-price">$22,000</p>
+                                <p class="AddtoCart">Add to cart</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best-selling-product-box">
+                        <div class="cat-right-product-box">
+                            <img src="assets/images/products/baby4.jpg" alt="">
+                            <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+                            
+                            <!-- Rating div -->
+                            <div class="cat-card-rating">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                                    <li>(3 Rating)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Price and Add to cart -->
+                            <div class="price-and-addto-cart">
+                                <p class="cat-product-price">$22,000</p>
+                                <p class="AddtoCart">Add to cart</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best-selling-product-box">
+                        <div class="cat-right-product-box">
+                            <img src="assets/images/products/baby5.jpg" alt="">
+                            <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+                            
+                            <!-- Rating div -->
+                            <div class="cat-card-rating">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                                    <li>(3 Rating)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Price and Add to cart -->
+                            <div class="price-and-addto-cart">
+                                <p class="cat-product-price">$22,000</p>
+                                <p class="AddtoCart">Add to cart</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Baby products -->
+
+
+<!-- Varticle menu products -->
+<section>
+    <div class="container-fluid mb-3">
+        <div class="row">
+            <div class="col-2">
+              <div class="nav flex-column nav-pills main-tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link TabLink active" id="gadgets-tab" data-toggle="pill" href="#gadgets" role="tab" aria-controls="gadgets" aria-selected="true">Women's Collections</a>
+                <a class="nav-link TabLink" id="tabs-tab" data-toggle="pill" href="#tabs" role="tab" aria-controls="tabs" aria-selected="false">Tabs</a>
+                <a class="nav-link TabLink" id="security-gadgets-tab" data-toggle="pill" href="#security-gadgets" role="tab" aria-controls="security-gadgets" aria-selected="false">Security Gadgets</a>
+                <a class="nav-link TabLink" id="mini-usb-gadgates-tab" data-toggle="pill" href="#mini-usb-gadgates" role="tab" aria-controls="mini-usb-gadgates" aria-selected="false">Mini USB Gadgets</a>
+
+
+                <a class="nav-link TabLink" id="mini-usb-gadgates-tab" data-toggle="pill" href="#mini-usb-gadgates" role="tab" aria-controls="mini-usb-gadgates" aria-selected="false">The Camera</a>
+                <a class="nav-link TabLink" id="mini-usb-gadgates-tab" data-toggle="pill" href="#mini-usb-gadgates" role="tab" aria-controls="mini-usb-gadgates" aria-selected="false">Camera Accessories</a>
+                <a class="nav-link TabLink" id="mini-usb-gadgates-tab" data-toggle="pill" href="#mini-usb-gadgates" role="tab" aria-controls="mini-usb-gadgates" aria-selected="false">Bluthooth Headset</a>
+                <a class="nav-link TabLink" id="mini-usb-gadgates-tab" data-toggle="pill" href="#mini-usb-gadgates" role="tab" aria-controls="mini-usb-gadgates" aria-selected="false">Ear Phone</a>
+                <a class="nav-link TabLink" id="mini-usb-gadgates-tab" data-toggle="pill" href="#mini-usb-gadgates" role="tab" aria-controls="mini-usb-gadgates" aria-selected="false">Power Bank</a>
+              </div>
+            </div>
+            <div class="col-10">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="gadgets" role="tabpanel" aria-labelledby="gadgets-tab">
+                    <div class="main-fruits">
+
+                        <!-- Start fruits Box -->
+                        <div class="fruits-box">
+                            <img src="assets/images/products/s1.jpg" alt="">
+                            <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                            <p class="line-through">$120.20</p>
+                            <p class="fruits-price">$120.20</p>
+                        </div>
+                        <!-- Start fruits Box -->
+                        <div class="fruits-box">
+                            <img src="assets/images/products/s2.jpg" alt="">
+                            <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                            <p class="line-through">$120.20</p>
+                            <p class="fruits-price">$120.20</p>
+                        </div>
+                        <!-- Start fruits Box -->
+                        <div class="fruits-box">
+                            <img src="assets/images/products/s3.jpg" alt="">
+                            <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                            <p class="line-through">$120.20</p>
+                            <p class="fruits-price">$120.20</p>
+                        </div>
+                        <!-- Start fruits Box -->
+                        <div class="fruits-box">
+                            <img src="assets/images/products/s4.jpg" alt="">
+                            <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                            <p class="line-through">$120.20</p>
+                            <p class="fruits-price">$120.20</p>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tabs" role="tabpanel" aria-labelledby="tabs-tab">...</div>
+                <div class="tab-pane fade" id="security-gadgets" role="tabpanel" aria-labelledby="security-gadgets-tab">...</div>
+                <div class="tab-pane fade" id="mini-usb-gadgates" role="tabpanel" aria-labelledby="mini-usb-gadgates-tab">...</div>
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+<!-- Varticle menu products -->
+
+<!-- Mans collection products -->
+<section>
+    <div class="container-fluid mb-3">
+        <div class="row">
+            <div class="col-2">
+              <div class="nav flex-column nav-pills main-tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link TabLink active" id="gadgets-tab" data-toggle="pill" href="#gadgets" role="tab" aria-controls="gadgets" aria-selected="true">Mans Collections</a>
+                <a class="nav-link TabLink" id="tabs-tab" data-toggle="pill" href="#tabs" role="tab" aria-controls="tabs" aria-selected="false">Tabs</a>
+                <a class="nav-link TabLink" id="security-gadgets-tab" data-toggle="pill" href="#security-gadgets" role="tab" aria-controls="security-gadgets" aria-selected="false">Security Gadgets</a>
+                <a class="nav-link TabLink" id="mini-usb-gadgates-tab" data-toggle="pill" href="#mini-usb-gadgates" role="tab" aria-controls="mini-usb-gadgates" aria-selected="false">Mini USB Gadgets</a>
+
+
+                <a class="nav-link TabLink" id="mini-usb-gadgates-tab" data-toggle="pill" href="#mini-usb-gadgates" role="tab" aria-controls="mini-usb-gadgates" aria-selected="false">The Camera</a>
+                <a class="nav-link TabLink" id="mini-usb-gadgates-tab" data-toggle="pill" href="#mini-usb-gadgates" role="tab" aria-controls="mini-usb-gadgates" aria-selected="false">Camera Accessories</a>
+                <a class="nav-link TabLink" id="mini-usb-gadgates-tab" data-toggle="pill" href="#mini-usb-gadgates" role="tab" aria-controls="mini-usb-gadgates" aria-selected="false">Bluthooth Headset</a>
+                <a class="nav-link TabLink" id="mini-usb-gadgates-tab" data-toggle="pill" href="#mini-usb-gadgates" role="tab" aria-controls="mini-usb-gadgates" aria-selected="false">Ear Phone</a>
+                <a class="nav-link TabLink" id="mini-usb-gadgates-tab" data-toggle="pill" href="#mini-usb-gadgates" role="tab" aria-controls="mini-usb-gadgates" aria-selected="false">Power Bank</a>
+              </div>
+            </div>
+            <div class="col-10">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="gadgets" role="tabpanel" aria-labelledby="gadgets-tab">
+                    <div class="main-fruits">
+
+                        <!-- Start fruits Box -->
+                        <div class="fruits-box">
+                            <img src="assets/images/products/m1.jpg" alt="">
+                            <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                            <p class="line-through">$120.20</p>
+                            <p class="fruits-price">$120.20</p>
+                        </div>
+                        <!-- Start fruits Box -->
+                        <div class="fruits-box">
+                            <img src="assets/images/products/m2.jpg" alt="">
+                            <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                            <p class="line-through">$120.20</p>
+                            <p class="fruits-price">$120.20</p>
+                        </div>
+                        <!-- Start fruits Box -->
+                        <div class="fruits-box">
+                            <img src="assets/images/products/m3.jpg" alt="">
+                            <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                            <p class="line-through">$120.20</p>
+                            <p class="fruits-price">$120.20</p>
+                        </div>
+                        <!-- Start fruits Box -->
+                        <div class="fruits-box">
+                            <img src="assets/images/products/m4.jpg" alt="">
+                            <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                            <p class="line-through">$120.20</p>
+                            <p class="fruits-price">$120.20</p>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tabs" role="tabpanel" aria-labelledby="tabs-tab">...</div>
+                <div class="tab-pane fade" id="security-gadgets" role="tabpanel" aria-labelledby="security-gadgets-tab">...</div>
+                <div class="tab-pane fade" id="mini-usb-gadgates" role="tabpanel" aria-labelledby="mini-usb-gadgates-tab">...</div>
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+<!-- Mans collection products -->
+
+<!-- Electronics Accorises products -->
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+              <div class="nav flex-column nav-pills main-tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link TabLink active" id="gadgets-tab" data-toggle="pill" href="#gadgets" role="tab" aria-controls="gadgets" aria-selected="true">Electronics Accessories</a>
+                <a class="nav-link TabLink" id="tabs-tab" data-toggle="pill" href="#tabs" role="tab" aria-controls="tabs" aria-selected="false">Tabs</a>
+                <a class="nav-link TabLink" id="security-gadgets-tab" data-toggle="pill" href="#security-gadgets" role="tab" aria-controls="security-gadgets" aria-selected="false">Security Gadgets</a>
+                <a class="nav-link TabLink" id="mini-usb-gadgates-tab" data-toggle="pill" href="#mini-usb-gadgates" role="tab" aria-controls="mini-usb-gadgates" aria-selected="false">Mini USB Gadgets</a>
+
+
+                <a class="nav-link TabLink" id="mini-usb-gadgates-tab" data-toggle="pill" href="#mini-usb-gadgates" role="tab" aria-controls="mini-usb-gadgates" aria-selected="false">The Camera</a>
+                <a class="nav-link TabLink" id="mini-usb-gadgates-tab" data-toggle="pill" href="#mini-usb-gadgates" role="tab" aria-controls="mini-usb-gadgates" aria-selected="false">Camera Accessories</a>
+                <a class="nav-link TabLink" id="mini-usb-gadgates-tab" data-toggle="pill" href="#mini-usb-gadgates" role="tab" aria-controls="mini-usb-gadgates" aria-selected="false">Bluthooth Headset</a>
+                <a class="nav-link TabLink" id="mini-usb-gadgates-tab" data-toggle="pill" href="#mini-usb-gadgates" role="tab" aria-controls="mini-usb-gadgates" aria-selected="false">Ear Phone</a>
+                <a class="nav-link TabLink" id="mini-usb-gadgates-tab" data-toggle="pill" href="#mini-usb-gadgates" role="tab" aria-controls="mini-usb-gadgates" aria-selected="false">Power Bank</a>
+              </div>
+            </div>
+            <div class="col-10">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="gadgets" role="tabpanel" aria-labelledby="gadgets-tab">
+                    <div class="main-fruits">
+
+                        <!-- Start fruits Box -->
+                        <div class="fruits-box">
+                            <img src="assets/images/products/h1.webp" alt="">
+                            <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                            <p class="line-through">$120.20</p>
+                            <p class="fruits-price">$120.20</p>
+                        </div>
+                        <!-- Start fruits Box -->
+                        <div class="fruits-box">
+                            <img src="assets/images/products/h2.webp" alt="">
+                            <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                            <p class="line-through">$120.20</p>
+                            <p class="fruits-price">$120.20</p>
+                        </div>
+                        <!-- Start fruits Box -->
+                        <div class="fruits-box">
+                            <img src="assets/images/products/h3.webp" alt="">
+                            <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                            <p class="line-through">$120.20</p>
+                            <p class="fruits-price">$120.20</p>
+                        </div>
+                        <!-- Start fruits Box -->
+                        <div class="fruits-box">
+                            <img src="assets/images/products/h4.webp" alt="">
+                            <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                            <p class="line-through">$120.20</p>
+                            <p class="fruits-price">$120.20</p>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tabs" role="tabpanel" aria-labelledby="tabs-tab">...</div>
+                <div class="tab-pane fade" id="security-gadgets" role="tabpanel" aria-labelledby="security-gadgets-tab">...</div>
+                <div class="tab-pane fade" id="mini-usb-gadgates" role="tabpanel" aria-labelledby="mini-usb-gadgates-tab">...</div>
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+<!-- Electronics Accorises products -->
+
+<!-- Banner ads  -->
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 my-3 mt-4">
+                <div class="main-banner-area">
+                    <div class="banner-box">
+                        <img src="assets/images/banner/banner1.jpg" alt="">
+                    </div>
+                    <div class="banner-box">
+                        <img src="assets/images/banner/banner2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Banner ads  -->
+
+<!-- Tranding Watch -->
+<section>
+    <div class="container-fluid mb-5 mt-3">
+        <!-- title -->
+        <div class="front-page-title">
+            <div class="front-title">
+                <h3>Tranding Watch</h3>
+            </div>
+            <div class="carusal-icons">
+                <a href="#"><p>See all ></p></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mb-1">
+                <div class="main-fruits">
+
+                    <!-- Start fruits Box -->
+                    <div class="fruits-box">
+                        <img src="assets/images/products/w1.webp" alt="">
+                        <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                        <p class="line-through">$120.20</p>
+                        <p class="fruits-price">$120.20</p>
+                    </div>
+                    <!-- Start fruits Box -->
+                    <div class="fruits-box">
+                        <img src="assets/images/products/w6.webp" alt="">
+                        <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                        <p class="line-through">$120.20</p>
+                        <p class="fruits-price">$120.20</p>
+                    </div>
+                    <!-- Start fruits Box -->
+                    <div class="fruits-box">
+                        <img src="assets/images/products/w7.webp" alt="">
+                        <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                        <p class="line-through">$120.20</p>
+                        <p class="fruits-price">$120.20</p>
+                    </div>
+                    <!-- Start fruits Box -->
+                    <div class="fruits-box">
+                        <img src="assets/images/products/w4.webp" alt="">
+                        <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                        <p class="line-through">$120.20</p>
+                        <p class="fruits-price">$120.20</p>
+                    </div>
+                    <!-- Start fruits Box -->
+                    <div class="fruits-box">
+                        <img src="assets/images/products/w5.webp" alt="">
+                        <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                        <p class="line-through">$120.20</p>
+                        <p class="fruits-price">$120.20</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Tranding Watch -->
+
+
+<!-- Best Beslite Products and Items -->
+<section>
+    <div class="container-fluid py-5">
+        <div class="row">
+
+            <!-- Featured section -->
+            <div class="col-md-3">
+                <div class="featured-product-front-page">
+                    <span class="featured-discunt">-20%</span>
+                    <div class="featured-product-img">
+                        <img src="assets/images/products/b1.jpg" class="img-fluid" alt="">
+                    </div>
+                    <a href="#"><h2>Nature's Way, Alive!, Men's Energy Multivitamin-</h2></a>
+                    <p class="featured-price">$20.80</p>
+                    <button>Buy now</button>
+                </div>
+            </div>
+
+            <!-- Right featured section -->
+            <div class="col-md-9">
+                <!-- title -->
+                <div class="front-page-title" style="margin-bottom: -5px;">
+                    <div class="front-title">
+                        <h3>Best Beslite For Women</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae a veritatis tempore totam minus magni veniam quasi nisi, commodi at!</p>
+                    </div>
+                    <div class="carusal-icons" style="width: 99px;">
+                        <a href="#"><p>See all ></p></a>
+                    </div>
+                </div>  
+
+                <div class="right-featured-products mt-4">
+
+                    <!-- Right items -->
+                    <div class="right-featured-items">
+                        <img src="assets/images/products/b2.jpg" class="img-fluid" alt="">
+                        <a href="#"><h2>Nature's Way, Alive!, Men's Energy Multivitamin-</h2></a>
+                        <p class="featured-price">$20.80</p>
+                        <button>Buy now</button>
+                    </div>
+                    <div class="right-featured-items">
+                        <img src="assets/images/products/b3.jpg" class="img-fluid" alt="">
+                        <a href="#"><h2>Nature's Way, Alive!, Men's Energy Multivitamin-</h2></a>
+                        <p class="featured-price">$20.80</p>
+                        <button>Buy now</button>
+                    </div>
+                    <div class="right-featured-items">
+                        <img src="assets/images/products/b4.jpg" class="img-fluid" alt="">
+                        <a href="#"><h2>Nature's Way, Alive!, Men's Energy Multivitamin-</h2></a>
+                        <p class="featured-price">$20.80</p>
+                        <button>Buy now</button>
+                    </div>
+                    <div class="right-featured-items">
+                        <img src="assets/images/products/b5.jpg" class="img-fluid" alt="">
+                        <a href="#"><h2>Nature's Way, Alive!, Men's Energy Multivitamin-</h2></a>
+                        <p class="featured-price">$20.80</p>
+                        <button>Buy now</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>  
+    </div>
+</section>
+<!-- Best Beslite Products and Items -->
+
+
+<!-- Featured Products and Items || Second section || Mobile phones -->
+<section>
+    <div class="container-fluid mb-5">
+        <div class="row">
+
+            <!-- Right featured section -->
+            <div class="col-md-9">
+                <!-- title -->
+                <div class="front-page-title" style="margin-bottom: -5px;">
+                    <div class="front-title">
+                        <h3>Best Selling Mobile Phones</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae a veritatis tempore totam minus magni veniam quasi nisi, commodi at!</p>
+                    </div>
+                    <div class="carusal-icons" style="width: 99px;">
+                        <a href="#"><p>See all ></p></a>
+                    </div>
+                </div>  
+
+                <div class="right-featured-products mt-4">
+
+                    <!-- Right items -->
+                    <div class="right-featured-items">
+                        <img src="assets/images/products/2.jpg" class="img-fluid" alt="">
+                        <a href="#"><h2>Nature's Way, Alive!, Men's Energy Multivitamin-</h2></a>
+                        <p class="featured-price">$20.80</p>
+                        <button>Buy now</button>
+                    </div>
+                    <div class="right-featured-items">
+                        <img src="assets/images/products/5.jpg" class="img-fluid" alt="">
+                        <a href="#"><h2>Nature's Way, Alive!, Men's Energy Multivitamin-</h2></a>
+                        <p class="featured-price">$20.80</p>
+                        <button>Buy now</button>
+                    </div>
+                    <div class="right-featured-items">
+                        <img src="assets/images/products/7.jpg" class="img-fluid" alt="">
+                        <a href="#"><h2>Nature's Way, Alive!, Men's Energy Multivitamin-</h2></a>
+                        <p class="featured-price">$20.80</p>
+                        <button>Buy now</button>
+                    </div>
+                    <div class="right-featured-items">
+                        <img src="assets/images/products/1.jpg" class="img-fluid" alt="">
+                        <a href="#"><h2>Nature's Way, Alive!, Men's Energy Multivitamin-</h2></a>
+                        <p class="featured-price">$20.80</p>
+                        <button>Buy now</button>
+                    </div>
+
+                </div>
+            </div>
+
+            
+            <!-- Featured section -->
+            <div class="col-md-3">
+                <div class="featured-product-front-page">
+                    <span class="featured-discunt">-20%</span>
+                    <div class="featured-product-img">
+                        <img src="assets/images/products/1.jpg" class="img-fluid" alt="">
+                    </div>
+                    <a href="#"><h2>Nature's Way, Alive!, Men's Energy Multivitamin-</h2></a>
+                    <p class="featured-price">$20.80</p>
+                    <button>Buy now</button>
+                </div>
+            </div>
+
+
+        </div>  
+    </div>
+</section>
+<!-- Featured Products and Items || Second section || Mobile phones -->
+
+
+
+<!-- Mans Shoes  || Third section -->
+<section>
+    <div class="container-fluid mb-5">
+        <div class="row">
+
+            <!-- Featured section -->
+            <div class="col-md-3">
+                <div class="featured-product-front-page">
+                    <span class="featured-discunt">-20%</span>
+                    <div class="featured-product-img">
+                        <img src="assets/images/products/ms1.jpeg" class="img-fluid" alt="">
+                    </div>
+                    <a href="#"><h2>Nature's Way, Alive!, Men's Energy Multivitamin-</h2></a>
+                    <p class="featured-price">$20.80</p>
+                    <button>Buy now</button>
+                </div>
+            </div>
+
+            <!-- Right featured section -->
+            <div class="col-md-9">
+                <!-- title -->
+                <div class="front-page-title" style="margin-bottom: -5px;">
+                    <div class="front-title">
+                        <h3>Best Mans Shoes</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae a veritatis tempore totam minus magni veniam quasi nisi, commodi at!</p>
+                    </div>
+                    <div class="carusal-icons" style="width: 99px;">
+                        <a href="#"><p>See all ></p></a>
+                    </div>
+                </div>  
+
+                <div class="right-featured-products mt-4">
+
+                    <!-- Right items -->
+                    <div class="right-featured-items">
+                        <img src="assets/images/products/ms2.jpeg" class="img-fluid" alt="">
+                        <a href="#"><h2>Nature's Way, Alive!, Men's Energy Multivitamin-</h2></a>
+                        <p class="featured-price">$20.80</p>
+                        <button>Buy now</button>
+                    </div>
+                    <div class="right-featured-items">
+                        <img src="assets/images/products/ms3.jpeg" class="img-fluid" alt="">
+                        <a href="#"><h2>Nature's Way, Alive!, Men's Energy Multivitamin-</h2></a>
+                        <p class="featured-price">$20.80</p>
+                        <button>Buy now</button>
+                    </div>
+                    <div class="right-featured-items">
+                        <img src="assets/images/products/ms4.jpeg" class="img-fluid" alt="">
+                        <a href="#"><h2>Nature's Way, Alive!, Men's Energy Multivitamin-</h2></a>
+                        <p class="featured-price">$20.80</p>
+                        <button>Buy now</button>
+                    </div>
+                    <div class="right-featured-items">
+                        <img src="assets/images/products/ms5.jpeg" class="img-fluid" alt="">
+                        <a href="#"><h2>Nature's Way, Alive!, Men's Energy Multivitamin-</h2></a>
+                        <p class="featured-price">$20.80</p>
+                        <button>Buy now</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>  
+    </div>
+</section>
+<!-- Mans Shoes || Third section -->
+ 
+
+<!-- fruits Section -->
+<section>
+    <div class="container-fluid mb-5">
+        <!-- title -->
+        <div class="front-page-title">
+            <div class="front-title">
+                <h3>Today Fresh Fruits</h3>
+            </div>
+            <div class="carusal-icons">
+                <a href="#"><p>See all ></p></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mb-3">
+                <div class="main-fruits">
+
+                    <!-- Start fruits Box -->
+                    <div class="fruits-box">
+                        <img src="assets/images/products/onion.jpg" alt="">
+                        <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                        <p class="line-through">$120.20</p>
+                        <p class="fruits-price">$120.20</p>
+                    </div>
+                    <!-- Start fruits Box -->
+                    <div class="fruits-box">
+                        <img src="assets/images/products/orange.webp" alt="">
+                        <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                        <p class="line-through">$120.20</p>
+                        <p class="fruits-price">$120.20</p>
+                    </div>
+                    <!-- Start fruits Box -->
+                    <div class="fruits-box">
+                        <img src="assets/images/products/lemon.webp" alt="">
+                        <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                        <p class="line-through">$120.20</p>
+                        <p class="fruits-price">$120.20</p>
+                    </div>
+                    <!-- Start fruits Box -->
+                    <div class="fruits-box">
+                        <img src="assets/images/products/red.webp" alt="">
+                        <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                        <p class="line-through">$120.20</p>
+                        <p class="fruits-price">$120.20</p>
+                    </div>
+                    <!-- Start fruits Box -->
+                    <div class="fruits-box">
+                        <img src="assets/images/products/chilli.webp" alt="">
+                        <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                        <p class="line-through">$120.20</p>
+                        <p class="fruits-price">$120.20</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mb-3">
+                <div class="main-fruits">
+
+                    <!-- Start fruits Box -->
+                    <div class="fruits-box">
+                        <img src="assets/images/products/onion.jpg" alt="">
+                        <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                        <p class="line-through">$120.20</p>
+                        <p class="fruits-price">$120.20</p>
+                    </div>
+                    <!-- Start fruits Box -->
+                    <div class="fruits-box">
+                        <img src="assets/images/products/orange.webp" alt="">
+                        <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                        <p class="line-through">$120.20</p>
+                        <p class="fruits-price">$120.20</p>
+                    </div>
+                    <!-- Start fruits Box -->
+                    <div class="fruits-box">
+                        <img src="assets/images/products/lemon.webp" alt="">
+                        <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                        <p class="line-through">$120.20</p>
+                        <p class="fruits-price">$120.20</p>
+                    </div>
+                    <!-- Start fruits Box -->
+                    <div class="fruits-box">
+                        <img src="assets/images/products/red.webp" alt="">
+                        <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                        <p class="line-through">$120.20</p>
+                        <p class="fruits-price">$120.20</p>
+                    </div>
+                    <!-- Start fruits Box -->
+                    <div class="fruits-box">
+                        <img src="assets/images/products/chilli.webp" alt="">
+                        <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                        <p class="line-through">$120.20</p>
+                        <p class="fruits-price">$120.20</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- fruits Section -->
+
+
+
+
+
+<!-- footer area-->
+<footer class="footer-area">
+    <!-- footer top start-->
+    <div class="footer-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 Mhr">
+                    <a href="" class="logo-footer">
+                        <img src="assets/images/bdbaba.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-9">
+                    <div class="widget widget-newsletter form-wrapper d-flex justify-content-center align-items-center form-wrapper-inline">
+                        <div class="newsletter-info ">
+                        <h4 class="widget-title">Subscribe to our Newsletter</h4>
+                        <p>Get all the latest information on Events, Sales and Offers.</p>
+                        </div>
+                        <form action="" class="input-wrapper input-wrapper-inline d-flex">
+                        <input type="email" class="form-control" name="newsletter_email" id="newsletter_email" placeholder="Email address here..." required="">
+                        <button class="btn btn-grey btn-md ml-2" type="submit">subscribe<i class="fa fa-arrow-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of footer top-->
+
+
+    <!-- start of footer middle-->
+    <div class="footer-middle">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget">
+                        <h4 class="widget-title">Location</h4>
+                        <ul class="widget-body">
+                            <li>                                         
+                                <label>Phone:</label>
+                                <a href="#">Toll Free (123) 456-7890</a>
+                            </li>
+                            <li>
+                                <label>Email:</label>
+                                <a href="#">mail@gmail.com</a>
+                            </li>
+                            <li>
+                                <label>Address:</label>
+                                <a href="#">Hatirpul</a>
+                            </li>
+                            <li>
+                                <label>WORKING DAYS/HOURS:</label>
+                            </li>
+                            <li>
+                                <a href="#">Mon - Sun / 9:00 AM - 8:00 PM</a>
+                            </li>
+                        </ul>                                
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget ml-lg-4">
+                        <h4 class="widget-title">My Account</h4>
+                        <ul class="widget-body">
+                            <li>                                         
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Order History</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns</a>
+                            </li>
+                            <li>
+                                <a href="#">Custom Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Condition</a>
+                            </li>
+                        </ul>                                
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget ml-lg-4">
+                        <h4 class="widget-title">Quick Links</h4>
+                        <ul class="widget-body">
+                            <li>                                         
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Order History</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns</a>
+                            </li>
+                            <li>
+                                <a href="#">Custom Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Condition</a>
+                            </li>
+                        </ul>                                
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget widget-instagram">
+                        <h4 class="widget-title">About NavieaSoft</h4>
+                        <ul class="widget-body">
+                            <li>                                         
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Order History</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns</a>
+                            </li>
+                            <li>
+                                <a href="#">Custom Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Condition</a>
+                            </li>
+                        </ul>                                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="bordr-bottom"></div>
+            <div class="footer-content d-flex">
+                <div class="footer-left">
+                    <p>
+                        Navieasoft eCommerce © 2020. All Rights Reserved                            
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <ul>
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer area -->
+
+
+
+    <!-- jquery js -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- bootstrap popper js -->
+    <script src="assets/js/popper.js"></script>
+    <!-- theme bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- swiper js -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- main js-->
+    <script src="assets/js/borhan.js"></script>
+</body>
+
+</html>
