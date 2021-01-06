@@ -49,7 +49,8 @@ a:focus {
 
 img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
+    /* object-fit: cover; */
 }
 .headerNavbar {
     padding: 3px 0px !important;
@@ -68,12 +69,15 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 15px;
+    margin: 0;
     font-weight: 700;
 }
 
 p:last-child {
     margin-bottom: 0
+}
+.container-fluid {
+    width: 1320px;
 }
 
 .ratings-full {
@@ -345,7 +349,11 @@ color: black;
     margin: 20px 0px;
     transition: all 0.2s linear;
     width: 100%;
-    height: 200px;
+}
+.category-products-item img {
+    width: 81px;
+    height: auto;
+    padding: 10px;
 }
 .category-products-item:hover {
     border-bottom: 2px solid #00012796;
@@ -491,10 +499,10 @@ color: black;
     width: 100%;
  }
  .sidebar-middle-menus li{
-    padding: 2px 20px;
+    padding: 5px 20px;
  }
  .sidebar-middle-menus a{
-    color: white;
+    color: white;   
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -648,7 +656,7 @@ color: white;
 }
 .category-products-item p{
 
-font-size: 14px;
+font-size: 13px;
 
 font-weight: 800;
 
@@ -1317,6 +1325,7 @@ a.submit-btn.btn-outline-primary {
     box-shadow: 0px 0px 10px 0px #d3d3d385;
     border-radius: 5px;
     border: 2px solid rgb(0 255 43);
+    height: 100%;
 }
 .featured-product-front-page .featured-discunt {
     width: 40px;
@@ -1378,7 +1387,9 @@ a.submit-btn.btn-outline-primary {
     font-weight: bold;
     font-size: 18px;
     border-radius: 5px;
-    width: 100%;
+    width: 83%;
+    position: absolute;
+    bottom: 20px;
 }
 .featured-product-img {
     overflow: hidden;
@@ -1488,19 +1499,22 @@ grid-column-gap: 10px;
 
 }
 .fruits-box h2{
-    font-size: 18px;
+    font-size: 15px;
     color: black;
     padding: 5px 0px;
+    margin: 0px;
+    margin-bottom: 3px;
 }
 .fruits-box .line-through{
     text-decoration: line-through;
     margin: 0px;
     color: gray;
+    font-size: 13px;
 }
 .fruits-box .fruits-price{
     margin: 0px;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 16px;
 }
 
 /* Tabs categorys
@@ -1735,12 +1749,22 @@ grid-column-gap: 10px;
 }
 .bdbabamall-box {
     width: 100%;
-    background: #003a00;
+    background: #c8c8c8;
     padding-bottom: 10px;
     color: white;
-    border-radius: 3px;
-    box-shadow: 0px 1px 2px 0px black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #d3d3d396;
+    transition: 0.7s;
 }
+.bdbabamall-box:hover {
+    background: green;
+    color: white;
+    transform: scale(1.1);
+}
+.bdbabamall-box:hover .bdbabamall-content {
+    color: white;
+}
+
 .bdbabamall-box img{
     width: 100%;
     height: 300px;
@@ -1758,7 +1782,7 @@ grid-column-gap: 10px;
     object-fit: contain;
     background: white;
 }
-.bdbabamall-content {text-align: center;margin-top: -30px;}
+.bdbabamall-content {text-align: center;margin-top: -30px;color: black;}
 .bdbabamall-content h2{
     font-size: 14px;
     font-weight: 400;
@@ -1776,6 +1800,8 @@ grid-column-gap: 10px;
 .bdbabamall-image img {
     width: 100%;
     height: 190px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 /* Thanks you page
 ==================== */
@@ -2100,3 +2126,162 @@ font-size: 17px;
 .product-thumb img {
     width: 100%;
 }
+
+
+
+/* APPAREL Section 
+======================= */
+.StyleOnetitle {
+
+}
+.StyleOnetitle h2 {
+
+margin: 0px;
+
+margin-bottom: 12px;
+
+font-size: 23px;
+
+text-transform: capitalize;
+}
+.StyleOnetitle h2::after {
+    content: "";
+    position: absolute;
+    width: 814px;
+    height: 10px;
+    background: #02500214;
+    border-radius: 10px;
+    margin-top: 9px;
+    margin-left: 20px;
+}
+.left-featured-banner {
+    background-image: url(/assets/images/banner/apperal.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 340px;
+}
+.main-featured-banner {padding: 20px;display: flex;justify-content: space-between;flex-direction: column;height: 100%;}
+.main-featured-banner h2{
+    margin: 0px;
+    font-size: 34px;
+    color: white;
+}
+.main-featured-banner button{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 5px 23px;
+    width: fit-content;
+    background: white;
+    transition: all 0.4s ease;
+}
+.main-featured-banner button:hover {
+    background: green;
+    color: white;
+    letter-spacing: 1px;
+}
+
+/* Single column */
+.featured-column {height: 340px;padding: 10px;overflow: hidden;padding-top: 20px;}
+.featured-column h4{
+    margin: 0px;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+.featured-column p{
+    margin: 0px;
+    font-size: 13px;
+}
+.featured-column-image {
+    height: 100%;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+    padding-top: 64px;
+}
+.featured-column-image img {
+    width: 100%;
+}
+
+/* Right Mini Products Box */
+.main-right-apperal-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-mini-apperal-box {
+    border: 0.2px solid #f4f4f4;
+    height: 170px;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.right-mini-apperal-box:nth-child(1){
+    border-right: none;
+    border-bottom: none;
+}
+.right-mini-apperal-box:nth-child(2){
+    border-right: none;
+    border-bottom: none;
+}
+.right-mini-apperal-box:nth-child(3){
+    border-right: none;
+    border-bottom: none;
+}
+
+.right-mini-apperal-box h4{
+    margin: 0px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 11px;
+}
+.apperal-image {
+
+width: 45%;
+}
+.apperal-image img {
+    width: 100%;
+}
+
+/* footer services
+================== */
+.main-trade-services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column-gap: 20px;
+}
+.trade-service-box {
+    background: white;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 10px 0px #d3d3d3a8;
+    border-radius: 4px;
+}
+.trade-service-box img{
+    width: 100%;
+    height: 213px;
+    object-fit: cover;
+    padding: 6px;
+}
+.trade-service-box a{
+    
+}
+.trade-service-box a:hover{
+    
+}
+.trade-service-box h2{
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    padding: 13px 9px;
+}
+
+/* SCSS */
