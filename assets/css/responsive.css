@@ -20,8 +20,53 @@
     }
 }
 
-/* XS Device */
+/* Mobile devies max width */
 @media (max-width: 767px) {
+
+    /* Profile page */
+    .left-profile-box img {
+        width: 30% !important;
+    }
+    .profile-left-side {
+        margin-top: 4rem !important;
+    }
+    .profileTabs .nav-link {
+        font-size: 14px;
+    }
+    .personal-information-title i {
+        padding: 8px 9px;
+        font-size: 13px;
+    }
+    .personal-information-title h6 {
+        font-size: 12px;
+    }
+    .personal-information-edit {
+        padding: 1px 14px;
+        font-size: 14px;
+    }
+    .single-line-row p {
+        font-size: 13px;
+    }
+    .single-line-row {
+        margin-top: 11px !important;
+    }
+    .all-balance-box {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 5px;
+    }
+
+    /* Hero sidebar section */
+    .hero-left-sidebar-menu {
+        display: none;
+    }
+    
+    .hero-right-slider {
+        margin-top: 45px;
+        width: 100%;
+    }
+    
+
 
     /* sidebar menu */
     .main-left-fixed-sidebar {
