@@ -27,6 +27,20 @@ var CategorySlider = new Swiper('.category-slider', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    640: {
+      slidesPerView: 6,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 8,
+      spaceBetween: 10,
+    },
+  }
 });
 
 

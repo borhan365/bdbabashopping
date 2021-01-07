@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="assets/css/mobile.css">
 
     <!-- responsive css -->
-    <link rel="stylesheet" href="assets/css/responsive.css">    
-    
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
     <!-- Font awesome css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -29,20 +29,26 @@
 <body>
 
 <!-- Mobile Menu section -->
-<section class="mobile-header-menu-section">
-    <!-- Left Barger menu icon -->
-    <div class="bargerMenu">
-        <i class="fa fa-bars"></i>
-    </div>
+<section>
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <div class="mobile-header-menu-section">
+                <!-- Left Barger menu icon -->
+                <div class="bargerMenu">
+                    <i class="fa fa-bars"></i>  
+                </div>
 
-    <!-- Middle logo -->
-    <div class="mobile-header-logo">
-        <img src="assets/images/bdbaba.png" class="img-fluid" alt="">
-    </div>
+                <!-- Middle logo -->
+                <div class="mobile-header-logo">
+                    <img src="assets/images/bdbaba.png" class="img-fluid" alt="">
+                </div>
 
-    <!-- Right Menus -->
-    <div class="right-mobile-menu">
-        <i class="fa fa-shopping-basket"></i>  &nbsp;<span class="badge badge-light">0</span>
+                <!-- Right Menus -->
+                <div class="right-mobile-menu">
+                    <i class="fa fa-shopping-basket"></i>  &nbsp;<span class="badge badge-light">0</span>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <!-- Mobile Menu section -->
@@ -96,15 +102,115 @@
 </section>
 <!-- Left fixed sidebar -->
 
+<!-- Right cart sidebar fixed -->
+<section>
+    <div class="main-cart-fixed-sidebar" id="CartSidebar">
+        
+        <!-- My cart and Cross icon -->
+        <div class="cartTopHeader">
+            <i class="fa fa-times" onclick="CartSidebarToggle()"></i>
+            <h5>My Cart</h5>
+        </div>
+
+        <!-- All Products list -->
+        <div class="main-all-product-in-cart">
+
+            <!-- Single products -->
+            <div class="single-product-cart">
+                <div class="inCart-image">
+                    <img src="assets/images/products/1.jpg" alt="">
+                </div>
+
+                <!-- middle content -->
+                <div class="inCart-middle-content">
+                    <h2>Nylon Regular Backpack - Red and Black</h2>
+                    <p>Price: $350</p>
+                    <p><i class="fa fa-minus" aria-hidden="true"></i> 1 <i class="fa fa-plus" aria-hidden="true"></i></p>
+                </div>
+
+                <!-- delete icon -->
+                <div class="inCart-delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!-- Single products -->
+            <div class="single-product-cart">
+                <div class="inCart-image">
+                    <img src="assets/images/products/1.jpg" alt="">
+                </div>
+
+                <!-- middle content -->
+                <div class="inCart-middle-content">
+                    <h2>Nylon Regular Backpack - Red and Black</h2>
+                    <p>Price: $350</p>
+                    <p><i class="fa fa-minus" aria-hidden="true"></i> 1 <i class="fa fa-plus" aria-hidden="true"></i></p>
+                </div>
+
+                <!-- delete icon -->
+                <div class="inCart-delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!-- Single products -->
+            <div class="single-product-cart">
+                <div class="inCart-image">
+                    <img src="assets/images/products/1.jpg" alt="">
+                </div>
+
+                <!-- middle content -->
+                <div class="inCart-middle-content">
+                    <h2>Nylon Regular Backpack - Red and Black</h2>
+                    <p>Price: $350</p>
+                    <p><i class="fa fa-minus" aria-hidden="true"></i> 1 <i class="fa fa-plus" aria-hidden="true"></i></p>
+                </div>
+
+                <!-- delete icon -->
+                <div class="inCart-delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer section -->
+        <div class="inCart-footer">
+
+            <!-- Subtotal -->
+            <div class="inCart-subtotal FLEX">
+                <p>Sub Total : </p>
+                <p> ৳ 530</p>
+            </div>
+
+            <!-- Shipping express -->
+            <div class="inCart-shippingAddress FLEX">
+                <p>Shipping (Express) : </p>
+                <p> ৳ 50</p>
+            </div>
+
+            <!-- total  -->
+            <div class="inCart-total FLEX">
+                <p><b>Total Shopping :</b></p>
+                <p><b> ৳ 630</b></p>
+            </div>
+
+            <a href="cart.html"><button class="btn btn-success w-100 my-2 checkoutBtn">Process to checkout</button></a>
+
+        </div>
+
+
+    </div>
+</section>
+<!-- Right cart sidebar fixed -->
+
 <header class="header-area">
 
     <!-- Header middle -->
     <div class="header-middle">
-        <div class="container-fluid">
+        <div class="container">
              <div class="row align-items-center">
                 <div class="col-md-2">
                    <div class="logo-area">
-                       <a href="index.html"><img src="assets/images/bdbabablack.png" alt=""></a>
+                       <a href="index.html"><img src="assets/images/bdbaba.png" alt=""></a>
                    </div>
                 </div>
                 <div class="col-md-7">
@@ -127,8 +233,8 @@
                     <a href="login.html"><i class="fa fa-sign-in w-auto d-inline bg-info text-white p-2 rounded mr-1" aria-hidden="true"></i></a>
                 </div>
                 <div class="middle-cart">
-                    <button type="button" class="btn btn-success BrandColorbutton">
-                        <a href="cart.html"><i class="fa fa-shopping-basket"></i> Cart &nbsp;<span class="badge TopCart badge-light">0</span></a>
+                    <button type="button" class="btn btn-success BrandColorbutton" onclick="CartSidebarToggle()">
+                        <i class="fa fa-shopping-basket"></i> Cart &nbsp;<span class="badge TopCart badge-light">0</span>
                       </button>
                       <span><a href="profile.html"><img src="assets/images/others/happy-girl.jpg" class="rounded-circle w-25" alt=""></a></span>
                 </div>
@@ -139,54 +245,23 @@
 
 
     <!--header bottom-->
-    <div class="header-bottom">
-        <div class="container-fluid">
+    <div class="header-bottom" id="MainMenu">
+        <div class="container">
             <nav class="navbar navbar-expand-lg headerNavbar">
-            
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <i class="fa fa-bars"></i>
                 </button>
-              
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
+                  <ul class="navbar-nav mr-auto align-items-center">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#"> <i onclick="SidebarToggle()" class="fa fa-bars HomepageBar"></i> <span class="sr-only">(current)</span></a>
+                      <i onclick="SidebarToggle()" class="fa fa-bars HomepageBar"></i>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Ready to Ship</a>
                     </li>
-                    <!-- <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle service-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Services
-                      </a>
-                      <div class="dropdowTOP CATEGORIES
-                      n-menu" aria-labelledby="navbarDropdown">
-                        <div class="service-dropdown-menu">
-                            <div class="row mr-0 ml-0">
-                                <div class="col-md-6 pl-0 pr-0">
-                                  <div class="left-side">
-                                      <ul>
-                                          <li><a href=""><i class="fas fa-dollar-sign"></i> Trade Assurance</a></li>
-                                          <li><a href=""><i class="fas fa-dollar-sign"></i> Pay Later</a></li>
-                                          <li><a href=""><i class="fas fa-dollar-sign"></i> Payment Terms: Net-60</a></li>
-                                          <li><a href=""><i class="fas fa-dollar-sign"></i> Production Monitoring & Inspection Services</a></li>
-                                          <li><a href=""><i class="fas fa-dollar-sign"></i> Logistic Service</a></li>
-                                      </ul>
-                                  </div>
-                               </div>
-                               <div class="col-md-6 pl-0 pr-0">
-                                  <div class="right-side">
-                                      <p>Sourcing Solutions</p>
-                                      <ul>
-                                          <li><a href="">Submit RFQ</a></li>
-                                          <li><a href="">Suppliers by Regions</a></li>
-                                      </ul>
-                                  </div>
-                               </div>
-                              </div>
-                        </div>
-                      </div>
-                    </li> -->
+
                     <li class="nav-item">
                       <a class="nav-link" href="#">Disabled</a>
                     </li>

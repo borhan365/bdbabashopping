@@ -23,6 +23,144 @@
 /* Mobile devies max width */
 @media (max-width: 767px) {
 
+    .mobileHide {
+        display: none;
+    }
+
+    /* Start front page */
+    .front-title h3 {
+        font-size: 13px;
+        padding: 7px 10px;
+    }
+    .main-express {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 4px;
+    }
+    .category-products-item img {
+        width: 60px;
+        padding: 8px;
+    }
+    .category-products-item p {
+        font-size: 9px;
+        padding: 10px;
+        padding-bottom: 10px;
+    }
+    .main-bdbaba-mall {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+    }
+    .bdbabamall-image img {
+        height: 145px;
+    }
+    .bdbabamall-image {
+        height: 135px;
+    }
+    .bdbabaCompany img {
+        height: 40px;
+        width: 40px;
+    }
+    .bdbabaCompany {
+        top: -30px;
+    }
+    .main-best-selling-products {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+    /* .bdbabamall-box:last-child{
+        display: none;
+    } */
+    .main-tabs {
+        background: white;
+        height: 100%;
+        padding: 5px;
+            padding-bottom: 5px;
+        display: block ruby;
+        overflow: hidden;
+        overflow-x: scroll;
+        width: 100%;
+        padding-bottom: 13px;
+    }
+    .TabLink {
+        padding: 3px 8px;
+        font-size: 13px;
+    }
+    .main-fruits {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+    .cat-right-product-box img {
+        width: 100%;
+        height: 158px;
+        object-fit: cover;
+    }
+    .price-and-addto-cart .AddtoCart {
+        font-size: 9px;
+    }
+    .price-and-addto-cart .cat-product-price{
+        padding: 5px;
+        font-size: 10px;
+    }
+    .product-thumb {
+        height: 156px;
+    } 
+    .StyleOnetitle h2{
+        font-size: 15px;
+    }
+    .StyleOnetitle h2::after {
+        width: 176px;
+        margin-top: 5px;
+    }
+    .fruits-box h2 {
+        font-size: 13px;
+    }
+    .front-title p {
+        display: none;
+    }
+    .front-page-title {
+        margin-top: 25px;
+    }
+    .right-featured-products {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+    .right-featured-items h2 {
+        font-size: 14px;
+    }
+    .eight-column-wrapper {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+    .main-sidebar-for-eight-column {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+    .featured-product-front-page {
+        margin-top: 20px;
+    }
+    .featured-product-front-page .featured-discunt {
+        top: 33px;
+    }
+    .main-trade-services {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+    .trade-service-box img {
+        height: 108px;
+    }
+    .trade-service-box h2 {
+        font-size: 14px;
+        padding: 0px 9px;
+        margin-bottom: 10px;
+    }
+
     /* Profile page */
     .left-profile-box img {
         width: 30% !important;
