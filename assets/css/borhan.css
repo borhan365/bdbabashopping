@@ -46,12 +46,6 @@ a:focus {
     outline: 0 solid;
     text-decoration: none
 }
-
-img {
-    max-width: 100%;
-    height: 100%;
-    /* object-fit: cover; */
-}
 .headerNavbar {
     padding: 3px 0px !important;
 }
@@ -84,6 +78,7 @@ p:last-child {
 :root {
     --brandColor: #025002;
     --brandColorDark: #004200;
+    --white: #ffffff;
 }
 
 
@@ -125,7 +120,7 @@ nav.cat-menu ul li a i {
     flex: 1;
 }
 .header-middle {
-    padding: 20px 0;
+    padding: 7px 0;
     background: #004200;
 }
 .search-form {
@@ -179,10 +174,10 @@ select#search-category {
 /* Hero section
 ================ */
 .main-hero-section {
-
+    margin-top: 3px;
 }
 .hero-left-sidebar-menu {
-    background: white;
+    background: var(--brandColorDark);
     padding: 10px 32px;
     height: 100%;
     margin-right: 10px;
@@ -200,9 +195,15 @@ select#search-category {
     font-weight: 500;
     display: flex;
     justify-content: space-between;
+    color: white;
+    transition: all 0.4s ease;
 }
 .hero-left-sidebar-menu a:hover{
-
+    border-left: 5px solid orangered;
+    padding-left: 10px;
+    border-radius: 3px;
+    color: orange;
+    font-weight: 500;
 }
 
 /* Swiper bullet */
@@ -223,7 +224,7 @@ select#search-category {
     box-sizing: content-box;
 }
 .swiper-pagination-bullet-active {
-    background: orangered !important;
+    background: var(--brandColorDark) !important;
 }
 
 /* Mini slider */
@@ -864,7 +865,14 @@ color: #0a001f;
 .Register-left-column a{
     text-decoration: none;
     color: white;
-    background: orangered;
+    background: var(--brandColorDark);
+    border: none;
+    padding: 7px 30px;
+}
+.Register-left-column a:hover{
+    color: white;
+    background: var(--brandColor);
+    border: none;
 }
 .login-ragistration a{
     color: white;
@@ -875,7 +883,7 @@ color: #0a001f;
 
 /* Right side */
 .Register-right-column{
-    background-color: blue;
+    background-color: var(--brandColorDark);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -1047,10 +1055,10 @@ hr {
 /* ======== footer middle =========*/
 .footer-middle {
     background: #000000d9;
-    border-top: 2px solid #00000042;
+    border-top: 3px solid #000000ab;
     padding: 20px 0px;
 }
-h4.widget-title {padding: 0.6rem 0;margin-bottom: .9rem;font-family: inherit;font-size: 1.4rem;font-weight: 700;color: #ccc;}
+h4.widget-title {padding: 0.6rem 0;margin-bottom: .9rem;font-family: inherit;font-size: 1.2rem;font-weight: 700;color: #ccc;}
 
 .footer-middle label {
     font-weight: 600;
@@ -1089,12 +1097,20 @@ h4.widget-title {padding: 0.6rem 0;margin-bottom: .9rem;font-family: inherit;fon
     text-align: center;
     border-radius: 14%;
     font-size: 17px;
+    transition: all 0.3s linear;
+}
+.footer-right ul li a:hover {
+    /* background: var(--brandColor); */
+    transform: translateY(-4px);
 }
 .footer-left p{
     color: #e4e4e4;
+    font-size: 13px;
 }
 .footer-content {
     justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 .widget.widget-newsletter button{
@@ -1576,7 +1592,7 @@ align-items: flex-start;
     padding: 5px 15px;
     border-radius: 7px;
     margin-top: 10px;
-    background: green;
+    background: var(--brandColor);
     color: white;
     font-size: 15px;
 }
@@ -1616,7 +1632,7 @@ align-items: flex-start;
 
 }
 .personal-information-title i{
-    background: green;
+    background: var(--brandColorDark);
     padding: 11px 13px;
     border-radius: 50%;
     color: white;
@@ -1639,6 +1655,7 @@ align-items: flex-start;
     padding: 5px 20px;
     margin: 0px;
     background: #a9a9a914;
+    cursor: pointer;
 }
 .personal-information-edit i{
     padding: 0px;
@@ -1853,13 +1870,13 @@ align-items: flex-start;
 /* Click to top */
 
 .ClickTop{
-    background: red;
+    background: var(--brandColorDark);
     color: white;
     position: fixed;
     bottom: 16px;
-    right: 15px;
+    right: 0px;
     width: 35px;
-    height: 32px;
+    height: 34px;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -2410,4 +2427,27 @@ grid-column-gap: 22px;
     border-radius: 3px;   
     object-fit: cover;   
     padding: 10px;
+}
+.inCart-middle-content p {
+    cursor: pointer;
+}
+
+/* Custom scrollbar for brand */
+
+/* After */
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+    background: var(--brandColorDark);
+    font-size: 17px;
+    padding: 10px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+/* Before */
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after{
+    background: var(--brandColorDark);
+    font-size: 17px;
+    padding: 10px;
+    font-weight: bold;
+    color: var(--white);
 }

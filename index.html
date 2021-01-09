@@ -34,17 +34,17 @@
         <div class="col-sm-12 col-md-12">
             <div class="mobile-header-menu-section">
                 <!-- Left Barger menu icon -->
-                <div class="bargerMenu">
+                <div class="bargerMenu" onclick="OpenMobileMenu()">
                     <i class="fa fa-bars"></i>  
                 </div>
 
                 <!-- Middle logo -->
                 <div class="mobile-header-logo">
-                    <img src="assets/images/bdbaba.png" class="img-fluid" alt="">
+                    <a href="#"><img src="assets/images/bdbaba.png" class="img-fluid" alt=""></a>
                 </div>
 
                 <!-- Right Menus -->
-                <div class="right-mobile-menu">
+                <div class="right-mobile-menu" onclick="MobileCartSidebarToggle()">
                     <i class="fa fa-shopping-basket"></i>  &nbsp;<span class="badge badge-light">0</span>
                 </div>
             </div>
@@ -278,8 +278,8 @@
 
 
 <!-- Start main Hero section -->
-<section class="main-hero-section my-3">
-    <div class="container">
+<section class="main-hero-section">
+    <div class="container heroSectionMobile">
         <div class="row no-gutters">
 
             <!-- Hero left sidebar menus -->
@@ -359,7 +359,7 @@
 </section>
 <!-- Start main Hero section -->
 
-<!-- BDBabaShopping Express -->
+<!-- BDBabaShopping Express || Brand for Desktop  -->
 <section class="bdbabaexpress-section p-2">
     <div class="container mt-4">
         <div class="front-page-title">
@@ -375,30 +375,48 @@
             <div class="col-md-12">
                 <div class="main-express">
 
-                    <!-- Start Express items -->
-                    <div class="express-main-box expressBox">
-                        <img src="assets/images/brands/11.png" alt="">
-                    </div>
-                    <div class="express-main-box expressBox">
-                        <img src="assets/images/brands/22.png" alt="">
-                    </div>
-                    <div class="express-main-box expressBox">
-                        <img src="assets/images/brands/33.png" alt="">
-                    </div>
-                    <div class="express-main-box expressBox">
-                        <img src="assets/images/brands/444.jpg" alt="">
-                    </div>
-                    <div class="express-main-box expressBox">
-                        <img src="assets/images/brands/555.png" alt="">
-                    </div>
-                    <div class="express-main-box expressBox">
-                        <img src="assets/images/brands/666.png" alt="">
-                    </div>
-                    <div class="express-main-box expressBox">
-                        <img src="assets/images/brands/777.png" alt="">
-                    </div>
-                    <div class="express-main-box expressBox">
-                        <img src="assets/images/brands/22.png" alt="">
+                    <div class="swiper-container ExpressSlider">
+                        <div class="swiper-wrapper">
+                            
+                            <!-- Start Express items -->
+                            <div class="swiper-slide express-main-box expressBox">
+                                <img src="assets/images/brands/11.png" alt="">
+                            </div>
+                            <div class="swiper-slide express-main-box expressBox">
+                                <img src="assets/images/brands/22.png" alt="">
+                            </div>
+                            <div class="swiper-slide express-main-box expressBox">
+                                <img src="assets/images/brands/33.png" alt="">
+                            </div>
+                            <div class="swiper-slide express-main-box expressBox">
+                                <img src="assets/images/brands/444.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide express-main-box expressBox">
+                                <img src="assets/images/brands/555.png" alt="">
+                            </div>
+                            <div class="swiper-slide express-main-box expressBox">
+                                <img src="assets/images/brands/666.png" alt="">
+                            </div>
+                            <div class="swiper-slide express-main-box expressBox">
+                                <img src="assets/images/brands/777.png" alt="">
+                            </div>
+                            <div class="swiper-slide express-main-box expressBox">
+                                <img src="assets/images/brands/22.png" alt="">
+                            </div>
+                            <div class="swiper-slide express-main-box expressBox">
+                                <img src="assets/images/brands/11.png" alt="">
+                            </div>
+                            <div class="swiper-slide express-main-box expressBox">
+                                <img src="assets/images/brands/22.png" alt="">
+                            </div>
+                            <div class="swiper-slide express-main-box expressBox">
+                                <img src="assets/images/brands/33.png" alt="">
+                            </div>
+                            <div class="swiper-slide express-main-box expressBox">
+                                <img src="assets/images/brands/444.jpg" alt="">
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
@@ -407,7 +425,12 @@
         </div>
     </div>
 </section>
-<!-- BDBabaShopping Express -->
+<!-- BDBabaShopping Express || Brand for Desktop  -->
+
+
+
+
+
 
 <!-- Category -->
 <section>
@@ -653,30 +676,39 @@
             <div class="col-md-12">
                 <div class="main-express">
 
-                    <!-- Start Express items -->
-                    <div class="express-main-box">
-                        <img src="assets/images/brands/a.png" alt="">
-                    </div>
-                    <div class="express-main-box">
-                        <img src="assets/images/brands/b.png" alt="">
-                    </div>
-                    <div class="express-main-box">
-                        <img src="assets/images/brands/c.png" alt="">
-                    </div>
-                    <div class="express-main-box">
-                        <img src="assets/images/brands/d.png" alt="">
-                    </div>
-                    <div class="express-main-box">
-                        <img src="assets/images/brands/e.png" alt="">
-                    </div>
-                    <div class="express-main-box">
-                        <img src="assets/images/brands/f.png" alt="">
-                    </div>
-                    <div class="express-main-box">
-                        <img src="assets/images/brands/g.png" alt="">
-                    </div>
-                    <div class="express-main-box">
-                        <img src="assets/images/brands/h.png" alt="">
+                    <div class="swiper-container BrandSlider">
+                        <div class="swiper-wrapper">
+
+                            <!-- Start Express items -->
+                            <div class="swiper-slide express-main-box">
+                                <img src="assets/images/brands/a.png" alt="">
+                            </div>
+                            <div class="swiper-slide express-main-box">
+                                <img src="assets/images/brands/b.png" alt="">
+                            </div>
+                            <div class="swiper-slide express-main-box">
+                                <img src="assets/images/brands/c.png" alt="">
+                            </div>
+                            <div class="swiper-slide express-main-box">
+                                <img src="assets/images/brands/d.png" alt="">
+                            </div>
+                            <div class="swiper-slide express-main-box">
+                                <img src="assets/images/brands/e.png" alt="">
+                            </div>
+                            <div class="swiper-slide express-main-box">
+                                <img src="assets/images/brands/f.png" alt="">
+                            </div>
+                            <div class="swiper-slide express-main-box">
+                                <img src="assets/images/brands/g.png" alt="">
+                            </div>
+                            <div class="swiper-slide express-main-box">
+                                <img src="assets/images/brands/h.png" alt="">
+                            </div>
+
+                        </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                     </div>
 
                 </div>
@@ -1099,7 +1131,7 @@
 
 <!-- Three column ads -->
 <section class="bg-white">
-    <div class="container py-4 my-4">
+    <div class="container py-4 my-4 ThreeColAds">
         <div class="row">
             <div class="col-md-12">
                 <div class="three-column-ads">
@@ -1109,11 +1141,11 @@
                         <a href="#"><img src="assets/images/banner/three1.jpg" alt=""></a>
                     </div>
                     <!-- Single ads -->
-                    <div class="ads-single-box">
+                    <div class="ads-single-box mobileHide">
                         <a href="#"><img src="assets/images/banner/three2.jpg" alt=""></a>
                     </div>
                     <!-- Single ads -->
-                    <div class="ads-single-box">
+                    <div class="ads-single-box mobileHide">
                         <a href="#"><img src="assets/images/banner/three3.jpg" alt=""></a>
                     </div>
                 </div>
@@ -1575,7 +1607,7 @@
 
 
 <!-- Under two column -->
-<section class="my-5">
+<section class="my-5 main-under-two-section">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -1824,7 +1856,7 @@
 <!-- Our trade services0 -->
 <section>
     <div class="container mb-4">
-        <div class="StyleOnetitle">
+        <div class="StyleOnetitle BlogTitle">
             <h2>OUR TRADE SERVICES ARE HERE FOR YOU</h2>
         </div>
         <div class="row">
