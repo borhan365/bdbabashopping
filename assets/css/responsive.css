@@ -22,10 +22,10 @@
 
 /* Mobile devies max width */
 @media (max-width: 767px) {
-    .col-md-12{
+    /* .col-md-12{
         padding-right: 8px !important;
         padding-left: 8px !important;
-    }
+    } */
     .mobileHide {
         display: none;
     }
@@ -146,7 +146,7 @@
         display: none;
     }
     .front-page-title {
-        margin-top: 25px;
+        margin-top: 40px;
     }
     .right-featured-products {
         display: grid;
