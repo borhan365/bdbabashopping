@@ -45,7 +45,7 @@ var CategorySlider = new Swiper('.category-slider', {
 
 // ExpressSlider
 var ExpressSlider = new Swiper('.ExpressSlider', {
-  slidesPerView: 4,
+  slidesPerView: 3,
   spaceBetween: 10,
   navigation: {
     nextEl: '.swiper-button-next',
@@ -53,11 +53,35 @@ var ExpressSlider = new Swiper('.ExpressSlider', {
   },
   breakpoints: {
     640: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 10,
     },
     767: {
       slidesPerView: 6,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 8,
+      spaceBetween: 10,
+    },
+  }
+});
+
+// Brands Slider
+var BrandSlider = new Swiper('.BrandSlider', {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    767: {
+      slidesPerView: 4,
       spaceBetween: 10,
     },
     1024: {
