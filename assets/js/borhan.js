@@ -45,35 +45,26 @@ var CategorySlider = new Swiper('.category-slider', {
 
 // ExpressSlider
 var ExpressSlider = new Swiper('.ExpressSlider', {
-  slidesPerView: 3,
+  slidesPerView: 4,
   spaceBetween: 10,
-  // loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    340: {
-      slidesPerView: 3,
-      spaceBetween: 10,
-    },
     640: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetween: 10,
     },
     767: {
-      slidesPerView: 4,
+      slidesPerView: 6,
       spaceBetween: 10,
     },
     1024: {
       slidesPerView: 8,
       spaceBetween: 10,
     },
-  },
-  // autoplay: {
-  //   delay: 1000,
-  //   disableOnInteraction: false,
-  // },
+  }
 });
 
 

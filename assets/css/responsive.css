@@ -170,7 +170,7 @@
         margin-bottom: 10px;
     }
     .ClickTop {
-        right: 24px;
+        right: 30px;
     }
     
     /* footer section */
@@ -194,9 +194,7 @@
     }
     .express-main-box img {
         border-radius: unset;
-    }
-    .express-main-box img {
-        border-radius: unset;
+        width: 100%;
     }
     .express-main-box {
         border-radius: unset;
