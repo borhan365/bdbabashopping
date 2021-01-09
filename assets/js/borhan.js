@@ -54,7 +54,7 @@ var ExpressSlider = new Swiper('.ExpressSlider', {
   },
   breakpoints: {
     640: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 10,
     },
     767: {
