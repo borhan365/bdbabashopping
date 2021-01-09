@@ -53,12 +53,12 @@ var ExpressSlider = new Swiper('.ExpressSlider', {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    640: {
+    540: {
       slidesPerView: 3,
       spaceBetween: 10,
     },
     767: {
-      slidesPerView: 6,
+      slidesPerView: 4,
       spaceBetween: 10,
     },
     1024: {
@@ -66,10 +66,10 @@ var ExpressSlider = new Swiper('.ExpressSlider', {
       spaceBetween: 10,
     },
   },
-  autoplay: {
-    delay: 1000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 1000,
+  //   disableOnInteraction: false,
+  // },
 });
 
 
