@@ -21,7 +21,7 @@
 }
 
 /* Mobile devies max width */
-@media (max-width: 767px) {
+@media (max-width: 567px) {
     .col-md-12{
         padding-right: 8px !important;
         padding-left: 8px !important;
