@@ -43,30 +43,28 @@ var CategorySlider = new Swiper('.category-slider', {
   }
 });
 
-// Brand Slider
-var BrandSlider = new Swiper('.BrandSlider', {
-  slidesPerView: 8,
-  spaceBetween: 10,
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    dynamicBullets: true,
-  },
-  autoplay: {
-    delay: 1000,
-    disableOnInteraction: false,
-  },
-});
-
-
 // ExpressSlider
 var ExpressSlider = new Swiper('.ExpressSlider', {
-  slidesPerView: 8,
+  slidesPerView: 4,
   spaceBetween: 10,
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    dynamicBullets: true,
+  // loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+    767: {
+      slidesPerView: 6,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 8,
+      spaceBetween: 10,
+    },
   },
   autoplay: {
     delay: 1000,
