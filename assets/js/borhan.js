@@ -45,7 +45,7 @@ var CategorySlider = new Swiper('.category-slider', {
 
 // ExpressSlider
 var ExpressSlider = new Swiper('.ExpressSlider', {
-  slidesPerView: 4,
+  slidesPerView: 3,
   spaceBetween: 10,
   // loop: true,
   navigation: {
@@ -53,7 +53,11 @@ var ExpressSlider = new Swiper('.ExpressSlider', {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    540: {
+    340: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    640: {
       slidesPerView: 3,
       spaceBetween: 10,
     },
