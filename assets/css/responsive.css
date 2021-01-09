@@ -38,6 +38,10 @@
     .front-title h3{
         padding-right: 30px !important
     }
+    .footer-content{
+        flex-direction: column;
+    }
+    
 
     /* last-child */
 
@@ -72,7 +76,8 @@
         grid-gap: 10px;
     }
     .bdbabamall-image img {
-        height: 145px;
+        height: 121px;
+        object-fit: cover;
     }
     .bdbabamall-image {
         height: 135px;

@@ -68,28 +68,32 @@ var ExpressSlider = new Swiper('.ExpressSlider', {
 });
 
 // Brands Slider
-var BrandSlider = new Swiper('.BrandSlider', {
-  slidesPerView: 3,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 3,
-      spaceBetween: 10,
-    },
-    767: {
-      slidesPerView: 4,
-      spaceBetween: 10,
-    },
-    1024: {
-      slidesPerView: 8,
-      spaceBetween: 10,
-    },
-  }
-});
+// var BrandSlider = new Swiper('.BrandSlider', {
+//   slidesPerView: 3,
+//   spaceBetween: 10,
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+//   breakpoints: {
+//     440: {
+//       slidesPerView: 3,
+//       spaceBetween: 10,
+//     },
+//     640: {
+//       slidesPerView: 3,
+//       spaceBetween: 10,
+//     },
+//     767: {
+//       slidesPerView: 4,
+//       spaceBetween: 10,
+//     },
+//     1024: {
+//       slidesPerView: 8,
+//       spaceBetween: 10,
+//     },
+//   }
+// });
 
 
 
