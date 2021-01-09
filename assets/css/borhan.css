@@ -257,10 +257,12 @@ select#search-category {
     color: rgb(255, 255, 255);
     margin: 0px;
     background: #003a00;
-    padding: 10px 55px;
-    border-top-right-radius: 15px;
-    display: inline-block;
+    padding: 10px 10px;
     font-weight: 500;
+    clip-path: polygon(0 0, 0 95%, 83% 100%, 100% 0%, 100% 0);
+    width: 100%;
+    padding-right: 60px;
+    border-left: 4px solid rgb(63 255 0);
 }
 .front-title p {
     font-size: 13px;
