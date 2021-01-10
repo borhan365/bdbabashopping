@@ -1,8 +1,13 @@
 
 // Hero right slider
 var HeroRightSlider = new Swiper('.hero-right-slider', {
+    loop: true,
     pagination: {
       el: '.swiper-pagination',
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
     },
   });
 
@@ -109,8 +114,6 @@ function SidebarToggle() {
     }
   }
   
-  var SidebarMenu = document.getElementById("LeftSidebar");
-  console.log(SidebarMenu.style.display);
 
 
 
@@ -130,7 +133,7 @@ function CartSidebarToggle() {
 // Mobile toggle menu
 function OpenMobileMenu() {
   var MobileSidebarMenu = document.getElementById("LeftSidebar");
-  if (MobileSidebarMenu.style.display === "none") {
+  if (MobileSidebarMenu.style.display === "none" || MobileSidebarMenu.style.display === "") {
     MobileSidebarMenu.style.display = "block";
   } else {
     MobileSidebarMenu.style.display = "none";
@@ -141,7 +144,7 @@ function OpenMobileMenu() {
 function MobileCartSidebarToggle() {
   var MobileCartSidebarMenu = document.getElementById("CartSidebar");
   
-  if (MobileCartSidebarMenu.style.display === "none") {
+  if (MobileCartSidebarMenu.style.display === "none" || MobileCartSidebarMenu.style.display === "") {
     MobileCartSidebarMenu.style.display = "block";
   } else {
     MobileCartSidebarMenu.style.display = "none";
