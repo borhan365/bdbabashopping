@@ -156,7 +156,7 @@
         display: none;
     }
     .front-page-title {
-        margin-top: 40px;
+        /* margin-top: 40px; */
     }
     .right-featured-products {
         display: grid;
@@ -198,6 +198,15 @@
     }
     .ClickTop {
         right: 30px;
+    }
+    .women-fashin-section {
+        margin-top: 20px;
+    }
+    .mans-fashing-section {
+        margin-top: 20px;
+    }
+    .beslite-title {
+        margin-top: 35px !important;
     }
     
     /* footer section */
