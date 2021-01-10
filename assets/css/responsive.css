@@ -248,12 +248,12 @@
         display: none;
     }
     .ThreeColAds {
-        margin: 0px !important;
-        padding: 0px !important;
+        /* margin: 0px !important;
+        padding: 0px !important; */
     }
     .ads-single-box {
         overflow: hidden;
-        padding: 12px 23px;
+        /* padding: 12px 23px; */
         width: 100%;
     }
 
