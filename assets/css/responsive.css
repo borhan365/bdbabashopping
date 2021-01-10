@@ -312,6 +312,12 @@
     .bestlite-container {
         
     }
+    .topHeader-section {
+        display: none;
+    }
+    .mobileFooter-fixed-navbar {
+        margin-top: 50px;
+    }
 
     /* Payment page */
     .payment-section {

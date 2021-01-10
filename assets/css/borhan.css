@@ -2609,3 +2609,40 @@ margin-left: 14px;
     font-size: 14px;
     align-items: center;
 }
+
+/* Mobile Footer
+================= */
+.main-mobile-footer-menu {
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
+    background: var(--brandColorDark);
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 7px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+}
+.footerMenuItems {
+    width: 100%;
+    background: var(--brandColor);
+    padding: 4px;
+    border-radius: 4px;
+}
+.footerMenuItems a{    
+color: white;   
+display: flex;   
+justify-content: center;   
+align-items: center;   
+flex-direction: column;
+}
+.footerMenuItems i{
+    font-size: 22px;
+}
+.footerMenuItems span{   
+    font-size: 11px;
+}
