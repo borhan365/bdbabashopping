@@ -257,6 +257,78 @@
         width: 100%;
     }
 
+    /* Order page */
+    .order-section {
+        margin-top: 60px;
+    }
+    .main-order-left-side h2 {
+
+    }
+    .main-order-left-side {
+        padding: 0px 5px;
+    }
+    .formLabel{
+        font-size: 13px;
+    }
+    .inputField {
+        height: 34px;
+        font-size: 14px;
+        width: 100%;
+    }
+    .form-group {
+        margin-bottom: 5px !important;
+    }
+    .order-content li {
+        font-size: 13px;
+    }
+    .orderButton {
+        font-size: 14px;
+        margin-top: 13px;
+    }
+    .cart-right-order-summery {
+        padding: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-top: 20px !important;
+        background: #f5f9fb;
+        box-shadow: 0px 0px 10px 0px #ccc;
+        margin-bottom: 20px;
+    }
+    .OrdercheckoutBtn {
+        background: var(--brandColorDark);
+        color: var(--white);
+        border: none;
+        font-size: 14px;
+    }
+    .BtnColor {
+        background: var(--brandColorDark);
+        color: var(--white);
+        border: none;
+    }
+    .main-thankyou-page {
+        height: 198px;
+        background-size: contain;
+    }
+
+    /* Payment page */
+    .payment-section {
+        margin-top: 40px;
+    }
+    .payment-left-sidebar h2 {
+        font-size: 15px;
+        color: #000000d4;
+        font-weight: lighter;
+    }
+    .payment-left-sidebar {
+        padding: 25px 0px;
+    }
+    .paymentbtn {
+        background: var(--brandColorDark);
+        color: var(--white);
+        border: none;
+        font-size: 14px;
+    }
+
     /* Profile page */
     .left-profile-box img {
         width: 30% !important;
