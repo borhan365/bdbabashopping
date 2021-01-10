@@ -194,7 +194,7 @@ margin-right: 184px;
 }
 
 .threeMenu .marchent {
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(29% 0%, 100% 0%, 75% 100%, 0% 100%);
     position: absolute;
     background: firebrick;
 }
@@ -203,9 +203,9 @@ margin-right: 184px;
 }
 
 .threeMenu .vendor {
-    clip-path: polygon(32% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
     position: absolute;
-    margin-left: 90px;
+    margin-left: 79px;
     top: 0;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
