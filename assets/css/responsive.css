@@ -47,6 +47,10 @@
     .footer-content{
         flex-direction: column;
     }
+    .footer-area {
+
+        display: none;
+    }
     
 
     /* last-child */
@@ -182,6 +186,7 @@
         display: grid;
         grid-template-columns: auto auto;
         grid-gap: 10px;
+        margin-bottom: 45px;
     }
     .trade-service-box img {
         height: 108px;
