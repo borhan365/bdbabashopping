@@ -101,18 +101,25 @@ var ExpressSlider = new Swiper('.ExpressSlider', {
 // toggle left profile sidebar
 function SidebarToggle() {
     var SidebarMenu = document.getElementById("LeftSidebar");
-    if (SidebarMenu.style.display === "none") {
+    if (SidebarMenu.style.display === "none" || SidebarMenu.style.display === "") {
       SidebarMenu.style.display = "block";
+
     } else {
       SidebarMenu.style.display = "none";
     }
   }
+  
+  var SidebarMenu = document.getElementById("LeftSidebar");
+  console.log(SidebarMenu.style.display);
+
+
+
 
 // toggle right cart sidebar
 function CartSidebarToggle() {
   var CartSidebarMenu = document.getElementById("CartSidebar");
   
-  if (CartSidebarMenu.style.display === "none") {
+  if (CartSidebarMenu.style.display === "none"  || CartSidebarMenu.style.display === "") {
     CartSidebarMenu.style.display = "block";
   } else {
     CartSidebarMenu.style.display = "none";

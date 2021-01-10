@@ -30,6 +30,9 @@ ul {
 ul li {
     display: inline-block;
 }
+li{
+    list-style: none;
+}
 
 ul li a {
     display: block;
@@ -120,7 +123,7 @@ nav.cat-menu ul li a i {
     flex: 1;
 }
 .header-middle {
-    padding: 7px 0;
+    padding: 12px 0;
     background: #004200;
 }
 .search-form {
@@ -167,10 +170,67 @@ select#search-category {
     color: white;
     font-size: 16px;
 }
-.ml-auto a {
-    color: white;
-    font-size: 15px;
+.threeMenu {
+
+margin-right: 184px;
 }
+.threeMenu a {
+    color: white;
+    font-size: 13px;
+    background: orangered;
+    padding: 5px 20px;
+    transition: all 0.3s ease;
+}
+.threeMenu .importer {
+    clip-path: polygon(0 1%, 100% 0%, 71% 100%, 0% 100%);
+    position: absolute;
+    margin-left: -78px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: darkgreen;
+}
+.threeMenu .importer:hover {
+    background: orangered;
+}
+
+.threeMenu .marchent {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    position: absolute;
+    background: firebrick;
+}
+.threeMenu .marchent:hover {
+    background: black;
+}
+
+.threeMenu .vendor {
+    clip-path: polygon(32% 0%, 100% 0%, 100% 100%, 0% 100%);
+    position: absolute;
+    margin-left: 90px;
+    top: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: darkgreen;
+}
+.threeMenu .vendor:hover {
+    background: orangered;
+}
+
+/* Top Header section
+======================= */
+
+.topHeader-section {
+    background: var(--brandColor);
+    padding: 5px 0px;
+}
+.top-right-side {
+    display: flex;
+    float: right;
+}
+.rightmenuMiddle a{
+    color: var(--white);
+}
+
+
 /* Hero section
 ================ */
 .main-hero-section {
@@ -434,7 +494,6 @@ color: black;
     padding: 5px 10px;
     margin-top: 10px;
     border-top: 2px solid black;
-    position: absolute;
     bottom: 0;
 }
 .left-sidebar-footer a{
@@ -890,7 +949,6 @@ color: #0a001f;
 /* Right side */
 .Register-right-column{
     background-color: var(--brandColorDark);
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -906,11 +964,20 @@ color: #0a001f;
     width: 90%;
 }
 .Register-right-input-filds h4{
-    font-size: 16px;
-    color: #ffffff;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    background: orangered;
+    padding: 10px 10px;
+    font-weight: 500;
+    clip-path: polygon(0 0, 0 95%, 83% 100%, 100% 0%, 100% 0);
+    width: max-content;
+    padding-right: 60px !important;
+    border-left: 4px solid white;
+    margin-bottom: 8px;
 }
 .form-box {
-    font-size: 0.8rem !important;
+    font-size: 1rem !important;
 }
 
 .SelectOption{
@@ -919,7 +986,11 @@ color: #0a001f;
     background: white !important;
 }
 .form-check-label {
-    font-size: 13px;
+    font-size: 16px;
+}
+.rigisterBtn {
+    background: orangered;
+    border: none;
 }
 
 /* Login page
@@ -2150,9 +2221,11 @@ font-size: 17px;
 }
 .payment-checkbox {
     margin-top: -24px;
+    width: 15%;
 }
 .payment-contnet {
 
+width: 65%;
 }
 .payment-contnet h4{
     margin: 0px;
@@ -2163,9 +2236,7 @@ font-size: 17px;
     font-size: 13px;
     color: gray;
 }
-.payment-image {
-
-}
+.payment-image {width: 15%;}
 .payment-image img{
     width: 75px;
     height: 50px;
@@ -2179,6 +2250,14 @@ font-size: 17px;
 .product-thumb img {
     width: 100%;
     height: 100%;
+}
+.paymentbtn {
+    background: var(--brandColorDark);
+    border: none;
+    font-size: 15px;
+}
+.paymentbtn:hover {
+    background: var(--brandColor);
 }
 
 
@@ -2479,4 +2558,54 @@ grid-column-gap: 22px;
 }
 .bestlite-container {
     margin-bottom: 40px;
+}
+
+/* Currency */
+.currency-box{
+
+margin-left: 14px;
+}
+.currencyBtn {
+    background: var(--brandColorDark);
+    color: var(--white);
+    font-size: 12px;
+}
+.currencyBtn:hover {
+    background: rgba(0,0,0,.5);
+    color: var(--white);
+}
+.currencyItem{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.currencyItem img{
+    width: 20px;
+}
+
+/* Language */
+.language-box{margin-right: 93px;}
+.languageBtn {
+    background: var(--brandColorDark);
+    color: var(--white);
+    font-size: 12px;
+}
+.languageBtn:hover {
+    background: rgba(0,0,0,.5);
+    color: var(--white);
+}
+.languageItem{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.languageItem img{
+    width: 20px;
+}
+.top-left-section {
+
+}
+.top-left-section p{
+    margin: 0px;
+    color: var(--white);
+    font-size: 14px;
+    align-items: center;
 }
